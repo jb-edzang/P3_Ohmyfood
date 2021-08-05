@@ -1,9 +1,10 @@
-
-footer{
-    background-color: #f2f2f2;
-    padding:15px;
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin:auto;
 }
 
-footer ul{
-    list-style-type: none;
+img{
+    /* height: 300px; */
+    width: 300px;
 }
