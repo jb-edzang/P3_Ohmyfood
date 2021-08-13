@@ -66,10 +66,13 @@ header .logo img {
   text-align: center;
   font-weight: 600;
   font-size: 20px;
-  border: 0;
   height: 63px;
   padding: 15px 10px;
   width: 100%;
+}
+
+.reservation .search input {
+  border: none;
 }
 
 .reservation .heading {
@@ -181,6 +184,7 @@ section .card {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 section h3, section h4 {
@@ -227,13 +231,12 @@ section .legende_card i:hover, section main .menu_du_gout h1 i:hover, main .menu
 
 section .new_label {
   position: absolute;
-  top: 928px;
+  top: 20px;
   right: 29px;
   width: 61px;
   background: #99e2d0;
   color: #2c9c81;
   font-weight: bold;
-  z-index: 999;
 }
 
 main img {
