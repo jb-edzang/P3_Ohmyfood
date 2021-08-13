@@ -1,0 +1,383 @@
+@font-face {
+  font-family: Shrinkhand;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  margin: auto;
+  max-width: 768px;
+  font-family: Shrinkhand, Roboto, serif, sans-serif;
+}
+
+header {
+  background-color: #f2f2f2;
+}
+
+header .logo img {
+  height: 3rem;
+  background-color: white;
+  display: inherit;
+  margin: auto;
+}
+
+.reservation {
+  margin: auto;
+  width: 100%;
+  background-color: #efefef;
+  padding-bottom: 66px;
+}
+
+.reservation .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dad0d0;
+  border-top: 0.3px solid #f2f2f2;
+  border-top-color: #dad0d0;
+  height: 63px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.reservation .search i.fas.fa-map-marker-alt {
+  padding-right: 15px;
+  height: 34px;
+  font-size: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.reservation .search input::-webkit-input-placeholder {
+  color: black !important;
+  background-color: #dad0d0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  border: 0;
+  height: 63px;
+  padding: 15px 10px;
+  width: 100%;
+}
+
+.reservation .heading {
+  text-align: center;
+  margin: auto;
+}
+
+.reservation .heading h1 {
+  font-size: 25px;
+}
+
+.reservation .heading h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #888;
+  height: 60px;
+}
+
+.reservation .btn {
+  border: 0px solid #9356dc;
+  background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 30px;
+  width: 42%;
+  padding: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.reservation .btn a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+aside {
+  background-color: white;
+  padding: 1px;
+}
+
+aside .offre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+aside .offre i {
+  margin: 20px;
+  color: #888;
+  font-size: 21px;
+}
+
+aside .offre i.fas.fa-store {
+  color: #9356dc;
+}
+
+aside .offre .cercle {
+  background-color: #9356dc;
+  border-radius: 20px;
+  padding: 6px 10px;
+  margin-left: -4px;
+  color: white;
+}
+
+aside .offre a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  padding: 12px 3px;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  border-bottom-color: #dad0d0;
+}
+
+aside .offre .deguster {
+  background: -webkit-gradient(linear, left top, right top, color-stop(98%, #e7def0), to(rgba(228, 205, 255, 0.997773)));
+  background: linear-gradient(90deg, #e7def0 98%, rgba(228, 205, 255, 0.997773) 100%);
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+}
+
+section .card {
+  border: 1px solid #f2f2f2;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+}
+
+section h3, section h4 {
+  padding-left: 10px;
+  font-family: Shrinkhand;
+}
+
+section h4 {
+  font-weight: 300;
+  font-size: 19px;
+  margin-top: -15px;
+  color: #333;
+}
+
+section img {
+  width: 100%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+section .legende_card, section main .menu_du_gout h1, main .menu_du_gout section h1, section main .menu_enchante h1, main .menu_enchante section h1, section main .menu_francais h1, main .menu_francais section h1, section main .menu_des_sens h1, main .menu_des_sens section h1, section main .menu_du_gout .entree .titre_prix, main .menu_du_gout .entree section .titre_prix, section main .menu_enchante .entree .titre_prix, main .menu_enchante .entree section .titre_prix, section main .menu_francais .entree .titre_prix, main .menu_francais .entree section .titre_prix, section main .menu_des_sens .entree .titre_prix, main .menu_des_sens .entree section .titre_prix, section main .menu_du_gout .plat .titre_prix, main .menu_du_gout .plat section .titre_prix, section main .menu_enchante .plat .titre_prix, main .menu_enchante .plat section .titre_prix, section main .menu_francais .plat .titre_prix, main .menu_francais .plat section .titre_prix, section main .menu_des_sens .plat .titre_prix, main .menu_des_sens .plat section .titre_prix, section main .menu_du_gout .dessert .titre_prix, main .menu_du_gout .dessert section .titre_prix, section main .menu_enchante .dessert .titre_prix, main .menu_enchante .dessert section .titre_prix, section main .menu_francais .dessert .titre_prix, main .menu_francais .dessert section .titre_prix, section main .menu_des_sens .dessert .titre_prix, main .menu_des_sens .dessert section .titre_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .legende_card i, section main .menu_du_gout h1 i, main .menu_du_gout section h1 i, section main .menu_enchante h1 i, main .menu_enchante section h1 i, section main .menu_francais h1 i, main .menu_francais section h1 i, section main .menu_des_sens h1 i, main .menu_des_sens section h1 i, section main .menu_du_gout .entree .titre_prix i, main .menu_du_gout .entree section .titre_prix i, section main .menu_enchante .entree .titre_prix i, main .menu_enchante .entree section .titre_prix i, section main .menu_francais .entree .titre_prix i, main .menu_francais .entree section .titre_prix i, section main .menu_des_sens .entree .titre_prix i, main .menu_des_sens .entree section .titre_prix i, section main .menu_du_gout .plat .titre_prix i, main .menu_du_gout .plat section .titre_prix i, section main .menu_enchante .plat .titre_prix i, main .menu_enchante .plat section .titre_prix i, section main .menu_francais .plat .titre_prix i, main .menu_francais .plat section .titre_prix i, section main .menu_des_sens .plat .titre_prix i, main .menu_des_sens .plat section .titre_prix i, section main .menu_du_gout .dessert .titre_prix i, main .menu_du_gout .dessert section .titre_prix i, section main .menu_enchante .dessert .titre_prix i, main .menu_enchante .dessert section .titre_prix i, section main .menu_francais .dessert .titre_prix i, main .menu_francais .dessert section .titre_prix i, section main .menu_des_sens .dessert .titre_prix i, main .menu_des_sens .dessert section .titre_prix i {
+  margin-left: auto;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #888;
+  width: 15%;
+}
+
+section .legende_card i:hover, section main .menu_du_gout h1 i:hover, main .menu_du_gout section h1 i:hover, section main .menu_enchante h1 i:hover, main .menu_enchante section h1 i:hover, section main .menu_francais h1 i:hover, main .menu_francais section h1 i:hover, section main .menu_des_sens h1 i:hover, main .menu_des_sens section h1 i:hover, section main .menu_du_gout .entree .titre_prix i:hover, main .menu_du_gout .entree section .titre_prix i:hover, section main .menu_enchante .entree .titre_prix i:hover, main .menu_enchante .entree section .titre_prix i:hover, section main .menu_francais .entree .titre_prix i:hover, main .menu_francais .entree section .titre_prix i:hover, section main .menu_des_sens .entree .titre_prix i:hover, main .menu_des_sens .entree section .titre_prix i:hover, section main .menu_du_gout .plat .titre_prix i:hover, main .menu_du_gout .plat section .titre_prix i:hover, section main .menu_enchante .plat .titre_prix i:hover, main .menu_enchante .plat section .titre_prix i:hover, section main .menu_francais .plat .titre_prix i:hover, main .menu_francais .plat section .titre_prix i:hover, section main .menu_des_sens .plat .titre_prix i:hover, main .menu_des_sens .plat section .titre_prix i:hover, section main .menu_du_gout .dessert .titre_prix i:hover, main .menu_du_gout .dessert section .titre_prix i:hover, section main .menu_enchante .dessert .titre_prix i:hover, main .menu_enchante .dessert section .titre_prix i:hover, section main .menu_francais .dessert .titre_prix i:hover, main .menu_francais .dessert section .titre_prix i:hover, section main .menu_des_sens .dessert .titre_prix i:hover, main .menu_des_sens .dessert section .titre_prix i:hover {
+  color: #9356dc;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+section .new_label {
+  position: absolute;
+  top: 928px;
+  right: 29px;
+  width: 61px;
+  background: #99e2d0;
+  color: #2c9c81;
+  font-weight: bold;
+  z-index: 999;
+}
+
+main img {
+  width: 100%;
+  max-height: 200px;
+}
+
+main .menu_du_gout, main .menu_enchante, main .menu_francais, main .menu_des_sens {
+  background-color: #f2f2f2;
+  margin-top: -15px;
+}
+
+main .menu_du_gout .legende_card, main .menu_enchante .legende_card, main .menu_francais .legende_card, main .menu_des_sens .legende_card, main .menu_du_gout h1, main .menu_du_gout .menu_enchante h1, main .menu_enchante .menu_du_gout h1, main .menu_enchante h1, main .menu_du_gout .menu_francais h1, main .menu_francais .menu_du_gout h1, main .menu_francais h1, main .menu_du_gout .menu_des_sens h1, main .menu_des_sens .menu_du_gout h1, main .menu_des_sens h1, main .menu_du_gout .entree .titre_prix, main .menu_enchante .entree .titre_prix, main .menu_francais .entree .titre_prix, main .menu_des_sens .entree .titre_prix, main .menu_du_gout .plat .titre_prix, main .menu_enchante .plat .titre_prix, main .menu_francais .plat .titre_prix, main .menu_des_sens .plat .titre_prix, main .menu_du_gout .dessert .titre_prix, main .menu_enchante .dessert .titre_prix, main .menu_francais .dessert .titre_prix, main .menu_des_sens .dessert .titre_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Shrankhand;
+  width: 93%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  font-style: italic;
+  height: 82px;
+}
+
+main .menu_du_gout .legende_card h1, main .menu_enchante .legende_card h1, main .menu_francais .legende_card h1, main .menu_des_sens .legende_card h1, main .menu_du_gout h1 h1, main .menu_du_gout .menu_enchante h1 h1, main .menu_enchante .menu_du_gout h1 h1, main .menu_enchante h1 h1, main .menu_du_gout .menu_francais h1 h1, main .menu_francais .menu_du_gout h1 h1, main .menu_enchante .menu_francais h1 h1, main .menu_francais .menu_enchante h1 h1, main .menu_francais h1 h1, main .menu_du_gout .menu_des_sens h1 h1, main .menu_des_sens .menu_du_gout h1 h1, main .menu_enchante .menu_des_sens h1 h1, main .menu_des_sens .menu_enchante h1 h1, main .menu_francais .menu_des_sens h1 h1, main .menu_des_sens .menu_francais h1 h1, main .menu_des_sens h1 h1, main .menu_du_gout .entree .titre_prix h1, main .menu_enchante .entree .titre_prix h1, main .menu_francais .entree .titre_prix h1, main .menu_des_sens .entree .titre_prix h1, main .menu_du_gout .plat .titre_prix h1, main .menu_enchante .plat .titre_prix h1, main .menu_francais .plat .titre_prix h1, main .menu_des_sens .plat .titre_prix h1, main .menu_du_gout .dessert .titre_prix h1, main .menu_enchante .dessert .titre_prix h1, main .menu_francais .dessert .titre_prix h1, main .menu_des_sens .dessert .titre_prix h1 {
+  font-weight: bold;
+}
+
+main .menu_du_gout .legende_card i.fas.fa-heart, main .menu_enchante .legende_card i.fas.fa-heart, main .menu_francais .legende_card i.fas.fa-heart, main .menu_des_sens .legende_card i.fas.fa-heart, main .menu_du_gout h1 i.fas.fa-heart, main .menu_du_gout .menu_enchante h1 i.fas.fa-heart, main .menu_enchante .menu_du_gout h1 i.fas.fa-heart, main .menu_enchante h1 i.fas.fa-heart, main .menu_du_gout .menu_francais h1 i.fas.fa-heart, main .menu_francais .menu_du_gout h1 i.fas.fa-heart, main .menu_enchante .menu_francais h1 i.fas.fa-heart, main .menu_francais .menu_enchante h1 i.fas.fa-heart, main .menu_francais h1 i.fas.fa-heart, main .menu_du_gout .menu_des_sens h1 i.fas.fa-heart, main .menu_des_sens .menu_du_gout h1 i.fas.fa-heart, main .menu_enchante .menu_des_sens h1 i.fas.fa-heart, main .menu_des_sens .menu_enchante h1 i.fas.fa-heart, main .menu_francais .menu_des_sens h1 i.fas.fa-heart, main .menu_des_sens .menu_francais h1 i.fas.fa-heart, main .menu_des_sens h1 i.fas.fa-heart, main .menu_du_gout .entree .titre_prix i.fas.fa-heart, main .menu_enchante .entree .titre_prix i.fas.fa-heart, main .menu_francais .entree .titre_prix i.fas.fa-heart, main .menu_des_sens .entree .titre_prix i.fas.fa-heart, main .menu_du_gout .plat .titre_prix i.fas.fa-heart, main .menu_enchante .plat .titre_prix i.fas.fa-heart, main .menu_francais .plat .titre_prix i.fas.fa-heart, main .menu_des_sens .plat .titre_prix i.fas.fa-heart, main .menu_du_gout .dessert .titre_prix i.fas.fa-heart, main .menu_enchante .dessert .titre_prix i.fas.fa-heart, main .menu_francais .dessert .titre_prix i.fas.fa-heart, main .menu_des_sens .dessert .titre_prix i.fas.fa-heart {
+  margin-top: 27px;
+}
+
+main .menu_du_gout h1, main .menu_enchante h1, main .menu_francais h1, main .menu_des_sens h1, main .menu_du_gout h2, main .menu_enchante h2, main .menu_francais h2, main .menu_des_sens h2, main .menu_du_gout h3, main .menu_enchante h3, main .menu_francais h3, main .menu_des_sens h3 {
+  font-family: Shrinkhand;
+}
+
+main .menu_du_gout h1, main .menu_enchante h1, main .menu_francais h1, main .menu_des_sens h1, main .menu_du_gout h2, main .menu_enchante h2, main .menu_francais h2, main .menu_des_sens h2 {
+  margin-top: 50px;
+}
+
+main .menu_du_gout h2, main .menu_enchante h2, main .menu_francais h2, main .menu_des_sens h2 {
+  width: 60px;
+  border: 4px solid #99e2d0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 6px;
+  color: #888;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px;
+}
+
+main .menu_du_gout .entree, main .menu_enchante .entree, main .menu_francais .entree, main .menu_des_sens .entree, main .menu_du_gout .plat, main .menu_du_gout .menu_enchante .plat, main .menu_enchante .menu_du_gout .plat, main .menu_enchante .plat, main .menu_du_gout .menu_francais .plat, main .menu_francais .menu_du_gout .plat, main .menu_enchante .menu_francais .plat, main .menu_francais .menu_enchante .plat, main .menu_francais .plat, main .menu_du_gout .menu_des_sens .plat, main .menu_des_sens .menu_du_gout .plat, main .menu_enchante .menu_des_sens .plat, main .menu_des_sens .menu_enchante .plat, main .menu_francais .menu_des_sens .plat, main .menu_des_sens .menu_francais .plat, main .menu_des_sens .plat, main .menu_du_gout .dessert, main .menu_du_gout .menu_enchante .dessert, main .menu_enchante .menu_du_gout .dessert, main .menu_enchante .dessert, main .menu_du_gout .menu_francais .dessert, main .menu_francais .menu_du_gout .dessert, main .menu_enchante .menu_francais .dessert, main .menu_francais .menu_enchante .dessert, main .menu_francais .dessert, main .menu_du_gout .menu_des_sens .dessert, main .menu_des_sens .menu_du_gout .dessert, main .menu_enchante .menu_des_sens .dessert, main .menu_des_sens .menu_enchante .dessert, main .menu_francais .menu_des_sens .dessert, main .menu_des_sens .menu_francais .dessert, main .menu_des_sens .dessert {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom-color: #dad0d0;
+  padding: 0 4px 0 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+main .menu_du_gout .entree .titre_prix, main .menu_enchante .entree .titre_prix, main .menu_francais .entree .titre_prix, main .menu_des_sens .entree .titre_prix, main .menu_du_gout .plat .titre_prix, main .menu_enchante .plat .titre_prix, main .menu_francais .plat .titre_prix, main .menu_des_sens .plat .titre_prix, main .menu_du_gout .dessert .titre_prix, main .menu_enchante .dessert .titre_prix, main .menu_francais .dessert .titre_prix, main .menu_des_sens .dessert .titre_prix {
+  font-style: normal;
+  font-size: 15px;
+  margin-top: -40px;
+}
+
+main .menu_du_gout .entree .titre_prix .prix, main .menu_enchante .entree .titre_prix .prix, main .menu_francais .entree .titre_prix .prix, main .menu_des_sens .entree .titre_prix .prix, main .menu_du_gout .plat .titre_prix .prix, main .menu_enchante .plat .titre_prix .prix, main .menu_francais .plat .titre_prix .prix, main .menu_des_sens .plat .titre_prix .prix, main .menu_du_gout .dessert .titre_prix .prix, main .menu_enchante .dessert .titre_prix .prix, main .menu_francais .dessert .titre_prix .prix, main .menu_des_sens .dessert .titre_prix .prix {
+  margin-left: auto;
+}
+
+main .menu_du_gout .btn, main .menu_enchante .btn, main .menu_francais .btn, main .menu_des_sens .btn {
+  border: 0px solid #9356dc;
+  background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+  width: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+main .menu_du_gout .btn a, main .menu_enchante .btn a, main .menu_francais .btn a, main .menu_des_sens .btn a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  font-size: 27px;
+  font-family: Roboto;
+}
+
+main .menu_du_gout .btn_commander, main .menu_enchante .btn_commander, main .menu_francais .btn_commander, main .menu_des_sens .btn_commander {
+  border: 0px solid #9356dc;
+  background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 30px;
+  width: 42%;
+  padding: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 26px;
+  border-radius: 50px;
+}
+
+footer {
+  background: #333;
+  font-family: Roboto, sans-serif;
+  padding: 20px 17px;
+  color: #fff;
+}
+
+footer img {
+  height: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: -40px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer ul i {
+  padding-right: 10px;
+}
+
+footer ul i.fas.fa-hands-helping {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .bloc_heading {
+    font-size: 0;
+    display: contents;
+  }
+}
+/*# sourceMappingURL=style.css.map */
