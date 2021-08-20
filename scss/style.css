@@ -47,7 +47,7 @@ body .container .reservation .search {
           justify-content: center;
   background-color: #e0e0e0;
   height: 58px;
-  margin-top: 18px;
+  margin-top: 8px;
   margin-bottom: 50px;
   padding: 10px;
 }
@@ -76,16 +76,16 @@ body .container .reservation .search input {
   border: none;
 }
 
-body .container .reservation .heading {
+body .container .reservation .title_reservation {
   text-align: center;
   margin: auto;
 }
 
-body .container .reservation .heading h1 {
+body .container .reservation .title_reservation h1 {
   font-size: 25px;
 }
 
-body .container .reservation .heading h3, body .container .reservation .heading section h4, body .container section .reservation .heading h4 {
+body .container .reservation .title_reservation h3, body .container .reservation .title_reservation section h4, body .container section .reservation .title_reservation h4 {
   font-size: 18px;
   font-weight: normal;
   color: #888;
@@ -295,6 +295,7 @@ body .container main .menu_du_gout .legende_card, body .container main .menu_enc
   display: -ms-flexbox;
   display: flex;
   font-family: Shrankhand;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
   width: 93%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -324,6 +325,7 @@ body .container main .menu_du_gout .legende_card i.fas.fa-heart, body .container
 
 body .container main .menu_du_gout h1, body .container main .menu_enchante h1, body .container main .menu_francais h1, body .container main .menu_des_sens h1, body .container main .menu_du_gout h2, body .container main .menu_enchante h2, body .container main .menu_francais h2, body .container main .menu_des_sens h2, body .container main .menu_du_gout h3, body .container main .menu_enchante h3, body .container main .menu_francais h3, body .container main .menu_des_sens h3, body .container main .menu_du_gout section h4, body .container section main .menu_du_gout h4, body .container main .menu_enchante section h4, body .container section main .menu_enchante h4, body .container main .menu_francais section h4, body .container section main .menu_francais h4, body .container main .menu_des_sens section h4, body .container section main .menu_des_sens h4 {
   font-family: Shrinkhand;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 }
 
 body .container main .menu_du_gout h2, body .container main .menu_enchante h2, body .container main .menu_francais h2, body .container main .menu_des_sens h2 {
@@ -360,18 +362,49 @@ body .container main .menu_du_gout .entree .titre_prix .prix, body .container ma
   margin-left: auto;
 }
 
-body .container main .menu_du_gout .entree .titre_prix i.fas.fa-check-circle, body .container main .menu_enchante .entree .titre_prix i.fas.fa-check-circle, body .container main .menu_francais .entree .titre_prix i.fas.fa-check-circle, body .container main .menu_des_sens .entree .titre_prix i.fas.fa-check-circle, body .container main .menu_du_gout .plat .titre_prix i.fas.fa-check-circle, body .container main .menu_enchante .plat .titre_prix i.fas.fa-check-circle, body .container main .menu_francais .plat .titre_prix i.fas.fa-check-circle, body .container main .menu_des_sens .plat .titre_prix i.fas.fa-check-circle, body .container main .menu_du_gout .dessert .titre_prix i.fas.fa-check-circle, body .container main .menu_enchante .dessert .titre_prix i.fas.fa-check-circle, body .container main .menu_francais .dessert .titre_prix i.fas.fa-check-circle, body .container main .menu_des_sens .dessert .titre_prix i.fas.fa-check-circle {
-  overflow: hidden;
+body .container main .menu_du_gout .entree .check_circle, body .container main .menu_enchante .entree .check_circle, body .container main .menu_francais .entree .check_circle, body .container main .menu_des_sens .entree .check_circle, body .container main .menu_du_gout .plat .check_circle, body .container main .menu_enchante .plat .check_circle, body .container main .menu_francais .plat .check_circle, body .container main .menu_des_sens .plat .check_circle, body .container main .menu_du_gout .dessert .check_circle, body .container main .menu_enchante .dessert .check_circle, body .container main .menu_francais .dessert .check_circle, body .container main .menu_des_sens .dessert .check_circle {
   position: absolute;
+  overflow: hidden;
 }
 
-body .container main .menu_du_gout .entree .titre_prix .btn_circle, body .container main .menu_enchante .entree .titre_prix .btn_circle, body .container main .menu_francais .entree .titre_prix .btn_circle, body .container main .menu_des_sens .entree .titre_prix .btn_circle, body .container main .menu_du_gout .plat .titre_prix .btn_circle, body .container main .menu_enchante .plat .titre_prix .btn_circle, body .container main .menu_francais .plat .titre_prix .btn_circle, body .container main .menu_des_sens .plat .titre_prix .btn_circle, body .container main .menu_du_gout .dessert .titre_prix .btn_circle, body .container main .menu_enchante .dessert .titre_prix .btn_circle, body .container main .menu_francais .dessert .titre_prix .btn_circle, body .container main .menu_des_sens .dessert .titre_prix .btn_circle {
+body .container main .menu_du_gout .entree .check_circle i.fas.fa-check-circle, body .container main .menu_enchante .entree .check_circle i.fas.fa-check-circle, body .container main .menu_francais .entree .check_circle i.fas.fa-check-circle, body .container main .menu_des_sens .entree .check_circle i.fas.fa-check-circle, body .container main .menu_du_gout .plat .check_circle i.fas.fa-check-circle, body .container main .menu_enchante .plat .check_circle i.fas.fa-check-circle, body .container main .menu_francais .plat .check_circle i.fas.fa-check-circle, body .container main .menu_des_sens .plat .check_circle i.fas.fa-check-circle, body .container main .menu_du_gout .dessert .check_circle i.fas.fa-check-circle, body .container main .menu_enchante .dessert .check_circle i.fas.fa-check-circle, body .container main .menu_francais .dessert .check_circle i.fas.fa-check-circle, body .container main .menu_des_sens .dessert .check_circle i.fas.fa-check-circle {
   position: relative;
-  left: 27%;
-  top: 30%;
-  background: #99e2d0;
-  -webkit-animation: validebtn ease 0.5s 1;
-          animation: validebtn ease 0.5s 1;
+  top: -45px;
+}
+
+body .container main .menu_du_gout .plat:active, body .container main .menu_enchante .plat:active, body .container main .menu_francais .plat:active, body .container main .menu_des_sens .plat:active {
+  -webkit-animation-name: coche;
+          animation-name: coche;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes coche {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    color: red;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+    color: mediumspringgreen;
+  }
+}
+
+@keyframes coche {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    color: red;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+    color: mediumspringgreen;
+  }
 }
 
 body .container main .menu_du_gout .btn, body .container main .menu_enchante .btn, body .container main .menu_francais .btn, body .container main .menu_des_sens .btn {
@@ -418,6 +451,7 @@ body .container footer {
   font-family: Roboto, sans-serif;
   padding: 40px 30px;
   color: #fff;
+  position: static;
 }
 
 body .container footer img {
@@ -433,46 +467,16 @@ body .container footer ul {
   line-height: 37px;
 }
 
-body .container footer ul i {
+body .container footer ul li .email {
+  text-decoration: none;
+  color: #fff;
+}
+
+body .container footer ul li i {
   padding-right: 10px;
 }
 
-body .container footer ul i.fas.fa-hands-helping {
+body .container footer ul li i.fas.fa-hands-helping {
   font-size: 12px;
-}
-
-@media screen and (min-width: 768px) {
-  body aside {
-    margin: auto;
-    grid-gap: 25px;
-  }
-  body aside .offre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    grid-gap: 25px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-  body .menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-    height: 100%;
-  }
 }
 /*# sourceMappingURL=style.css.map */

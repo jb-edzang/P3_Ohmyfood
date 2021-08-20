@@ -57,7 +57,7 @@ body{
                 justify-content: center;
                 background-color: #e0e0e0;
                 height: 58px;
-                margin-top: 18px;
+                margin-top: 8px;
                 margin-bottom:50px;
                 padding:10px;
                 
@@ -84,7 +84,7 @@ body{
                 }
             }
         
-            .heading{
+            .title_reservation{
                 text-align: center;
                 margin: auto;
         
@@ -272,6 +272,7 @@ body{
                 .legende_card {
                     display: flex;
                     font-family: Shrankhand; 
+                    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
                     width: 93%;
                     align-items: center;
                     font-size: 36px;
@@ -294,6 +295,7 @@ body{
                 
                 h1, h2, h3{
                     font-family: Shrinkhand;
+                    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
                 }
         
                 h2{
@@ -309,6 +311,7 @@ body{
                     text-transform: uppercase;
                     text-shadow: 1px 1px 1px;
                 }
+                
         
                 .entree{
                     border: 1px solid white;
@@ -326,23 +329,39 @@ body{
                         .prix{
                             margin-left: auto;
                         }
-
+                    }
+                    .check_circle{
+                        position:absolute;
+                        overflow: hidden;
                         i.fas.fa-check-circle{
-                            overflow: hidden;
-                            position: absolute;
-                        }
-
-                        .btn_circle{
-                            position: relative;
-                            left: 27%;
-                            top: 30%;
-                            background: #99e2d0;
-                            animation: validebtn ease 0.5s 1;
+                            position:relative;
+                            top:-45px;
                         }
                     }
                 }
-        
-                .plat, .dessert{
+
+                .plat{
+                    @extend .entree;
+                    &:active{
+                        animation-name: coche;
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                    }
+                    @keyframes coche{
+                        from{
+                            margin-left: 100%;
+                            width: 300%;
+                            color:red;
+                        }
+                        to{
+                            margin-left: 0%;
+                            width: 100%;
+                            color: mediumspringgreen;
+                        }
+                    }
+                }
+
+                .dessert{
                     @extend .entree;
                 }
         
@@ -390,6 +409,7 @@ body{
             font-family: Roboto, sans-serif;
             padding: 40px 30px;
             color: #fff;
+            position: static;
         
             img{
                 height: 2rem;
@@ -401,43 +421,20 @@ body{
               margin-left: -40px;
               font-size: 21px;
               line-height: 37px;
-        
-              i{
-                  padding-right: 10px;
-                } 
-               i.fas.fa-hands-helping{
-                font-size: 12px;
-                } 
+
+              li{
+                .email{
+                    text-decoration: none;
+                    color:#fff;
+                    }
+                i{
+                    padding-right: 10px;
+                    } 
+                i.fas.fa-hands-helping{
+                   font-size: 12px;
+                    }
+                }
             }
         }
-        
     }
-
-    @media screen and (min-width:768px) {
-        
-        aside{
-            margin: auto;
-            grid-gap:25px;
-            .offre{
-                display:flex;
-                flex-direction: row;
-                grid-gap:25px;
-                justify-content: space-between;
-                width: 100%;
-            }
-        }
-
-        .menus{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-flow: wrap;
-            // padding: 15px;
-            height: 100%;
-        }
-    }
-    
 }
-
-
-
