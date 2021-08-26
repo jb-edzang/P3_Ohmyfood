@@ -7,12 +7,6 @@
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 }
 
-@import "L_enchantee";
-@import "La_francaise";
-@import "La_palette";
-@import "Le_delicieux";
-@import "Loader";
-
 $Primaire:#9356dc;
 $Secondaire:#ff79da;
 $Tertiaire:#99e2d0;
@@ -22,12 +16,12 @@ $breakpoints: (
     'mobile': (max-width:768px),
     'desktop': (max-width: 1200px),
 ) ;
-@mixin desktop {
-    @media screen and (max-width: map-get($breakpoints, desktop)){
-        grid-template-columns: repeat(4, 1fr);
-        @content;
-    }
-}
+// @mixin desktop {
+//     @media screen and (max-width: map-get($breakpoints, desktop)){
+//         grid-template-columns: repeat(4, 1fr);
+//         @content;
+//     }
+// }
 
 @mixin btn{
     border: 0px solid #9356dc;
@@ -43,8 +37,6 @@ $breakpoints: (
     font-size: 15px;
     font-weight: bold;
 }
-
-
 
 body{
     font-family: Roboto, sans-serif;
@@ -148,11 +140,11 @@ body{
                 justify-content: space-between;
                 margin-bottom: 50px;
                 font-weight: bold;
-                @include desktop{
-                    display: grid;
-                    flex-direction: row;
-                    grid-template-columns: repeat(4, 1fr);
-                }
+                // @include desktop{
+                //     display: grid;
+                //     flex-direction: row;
+                //     grid-template-columns: repeat(4, 1fr);
+                // }
 
                 i{
                     margin:20px;
@@ -204,6 +196,38 @@ body{
                 margin-bottom: 20px;
                 position:relative;
             }
+            .loader{
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                width: 50px;
+                height: 50px;
+            }
+            .loader_spinner{
+                border-radius: 100%;
+                border: 6px solid transparent;
+                border-top-color: #fff;
+                border-bottom-color: #fff;
+            }
+            .loader_spinner::after{
+                content: " ";
+                position: absolute;
+                border-radius: 100%;
+                border-top: 5px solid blue;
+                border-top-color: rgba(231, 76, 60,1.0);
+                right: -6px;
+                left: -6px;
+                top: -6px;
+                bottom: -6px;
+                -webkit-border-radius: 100%;
+                animation:spinner 1.5s linear 2.5s infinite;
+                -webkit-animation:spinner 1.5s linear 2.5s infinite;
+}
+            @keyframes spinner {
+                0%{ transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); }
+                100%{ transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
+            }
+
         
             h3{
                 padding-left: 10px;
@@ -295,210 +319,156 @@ body{
                 }
             }
         }
-    }
-    .menu_du_gout{
-        background-color:$background-color;
-        margin-top:-15px;
-        .heading{
-            margin-top: 20px;
-            background-color: white;
-            .logo_arrow{
-                display: flex;
-                align-items: center;
-                i.fas.fa-arrow-left{
-                    font-weight: 900;
-                    font-size: xx-large;
-                    color:black;
-                }
-                .img_logo{
-                    margin: auto;
-                    font-family: Shrankhan;
-                    padding:15px;
-                    height: 48px;
-                }
-            }
     
-            .img_main{
-                width: 100%;
-                max-height: 60vw;
-                object-fit: cover;
-            }
-    
-            .bg_legende{
-                padding-top:-15px;
-                .legende_card {
+
+
+        .menu_du_gout{
+            background-color:$background-color;
+            margin-top:-15px;
+            .heading{
+                margin-top: 20px;
+                background-color: white;
+                .logo_arrow{
                     display: flex;
-                    width: 93%;
                     align-items: center;
-                    font-size: 36px;
-                    font-style: italic;
-                    height: 82px;
-                    border-top-left-radius: 25px;
-                    border-top-right-radius: 25px;
-                    i.fas.fa-heart{
-                        margin-top:27px;
-                        cursor: pointer;
-                        font-weight:lighter;
+                    i.fas.fa-arrow-left{
+                        font-weight: 900;
+                        font-size: xx-large;
+                        color:black;
                     }
-    
-                    h1{
-                        @extend .legende_card;
-                        font-size: 50px;
-                        justify-content: space-between;
-                        align-items: center;
-                        font-weight: bold;
-                        margin-top:50px;
+                    .img_logo{
+                        margin: auto;
+                        font-family: Shrankhan;
+                        padding:15px;
+                        height: 48px;
                     }
                 }
-            }
-        }
-    
-        h1, h2, h3{
-            font-family: Shrinkhand;
-        }
-    
-        h2{
-            width: 60px;
-            border: 4px solid #99e2d0;
-            border-top:none;
-            border-left: none;
-            border-right: none;
-            padding-bottom:6px;
-            margin-top:50px;
-            color:#888;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 1px;
-        }
-        
-        .entree{
-            border: 1px solid white;
-            background-color: white;
-            border-radius: 20px;
-            border-bottom-color: #dad0d0;
-            padding:0 4px 0 10px;
-            margin-top:15px;
-            cursor: pointer;
-            .titre_prix{
-                @extend .legende_card;
-                font-style: normal;
-                font-size: 15px;
-                margin-top:-40px;
-                .prix{
-                    margin-left: auto;
-                }
-            }
-            .check_circle{
-                position:absolute;
-                overflow: hidden;
-                i.fas.fa-check-circle{
-                    position:relative;
-                    top:-45px;
-                }
-            }
-            &:hover{
-                transition: margin-right 2s ease-in-out;
-                animation-name: coche;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                // transform-origin: left;
-            }
-            @keyframes coche{
-                from{
-                    margin-left: 100%;
-                    width: 300%;
-                }
-                to{
-                    margin-left: 85%;
+
+                .img_main{
                     width: 100%;
-                    background-color: mediumspringgreen;
+                    max-height: 60vw;
+                    object-fit: cover;
+                }
+
+                .bg_legende{
+                    padding-top:-15px;
+                    .legende_card {
+                        display: flex;
+                        width: 93%;
+                        align-items: center;
+                        font-size: 36px;
+                        font-style: italic;
+                        height: 82px;
+                        border-top-left-radius: 25px;
+                        border-top-right-radius: 25px;
+                        i.fas.fa-heart{
+                            margin-top:27px;
+                            cursor: pointer;
+                            font-weight:lighter;
+                        }
+
+                        h1{
+                            @extend .legende_card;
+                            font-size: 50px;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-weight: bold;
+                            margin-top:50px;
+                        }
+                    }
                 }
             }
-        }
-    
-        .plat, .dessert{
-            @extend .entree;
-        }
-    
-        .btn{
-            border: 0px solid $Primaire;
-            background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            width: 42%;
-            display: flex;
-            font-size: 15px;
-            font-weight: bold;
-    
-            a{
-                text-decoration: none;
-                color: white;
-                margin: auto;
-                font-size: 27px;
-                font-family: Roboto;  
-            }
-            &:hover{
-                filter: brightness(1.5);
-                box-shadow: 1px 1px 1px 1px;
-                transition: 2s;
-            }
-        }
-    
-        .btn_commander{
-            @include btn;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 26px;
-            border-radius: 50px;
-        }
-    }
-    
-    
-    .menu_enchante{
-        @extend .menu_du_gout;
-    }
-    .menu_francais{
-        @extend .menu_du_gout;
-    }
-    .menu_des_sens{
-        @extend .menu_du_gout;
-    }
-}
-//----------------------------------
-// en dehors de Sass
-// --------------------------------
 
-.sect_loader{
+            h1, h2, h3{
+                font-family: Shrinkhand;
+            }
 
-    .loader{
-        width: 768px;
-        height: auto;
-        margin:o;
-        padding:0;
-        display: inline-block;
-        vertical-align: center;
-    }
-    .loader_spinner{
-        border-radius:100%;
-        border: 15px solid #ff79da; 
-    }
-    .loader_spinner::after{
-        content: "";
-        position: absolute;
-        top:-6px;
-        left: -6px;
-        bottom: -6px;
-        right: -6px;
-        border-radius: 100%;
-        border: 15px solid #058868;
-        border-top-color:white;
-        animation: spinner 2s linear infinite;
-    }
-    @keyframes spinner {
-        0%{
-            transform: rotate(0deg);
+            h2{
+                width: 60px;
+                border: 4px solid #99e2d0;
+                border-top:none;
+                border-left: none;
+                border-right: none;
+                padding-bottom:6px;
+                margin-top:50px;
+                color:#888;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px;
+            }
+            
+            .entree{
+                border: 1px solid white;
+                background-color: white;
+                border-radius: 20px;
+                border-bottom-color: #dad0d0;
+                padding:0 4px 0 10px;
+                margin-top:15px;
+                cursor: pointer;
+                .titre_prix{
+                    @extend .legende_card;
+                    font-style: normal;
+                    font-size: 15px;
+                    margin-top:-40px;
+                    .prix{
+                        margin-left: auto;
+                    }
+                }
+                .check_circle{
+                    position:absolute;
+                    overflow: hidden;
+                    i.fas.fa-check-circle{
+                        position:relative;
+                        top:-45px;
+                    }
+                }
+            }
+
+            .plat, .dessert{
+                @extend .entree;
+            }
+
+            .btn{
+                border: 0px solid $Primaire;
+                background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+                width: 42%;
+                display: flex;
+                font-size: 15px;
+                font-weight: bold;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin: auto;
+                    font-size: 27px;
+                    font-family: Roboto;  
+                }
+                &:hover{
+                    filter: brightness(1.5);
+                    box-shadow: 1px 1px 1px 1px;
+                    transition: 2s;
+                }
+            }
+
+            .btn_commander{
+                @include btn;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                padding: 26px;
+                border-radius: 50px;
+            }
         }
-        100%{
-            transform: rotate(360%);
+            
+        .menu_enchante{
+            @extend .menu_du_gout;
         }
+        .menu_francais{
+            @extend .menu_du_gout;
+        }
+        .menu_des_sens{
+            @extend .menu_du_gout;
+        }
+
     }
 }
 
