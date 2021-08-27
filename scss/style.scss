@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Shrinkhand;
+    font-family: shrikhand;
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 }
 @font-face {
@@ -38,6 +38,7 @@ $breakpoints: (
     font-weight: bold;
 }
 
+
 body{
     font-family: Roboto, sans-serif;
     background:$background-color;
@@ -54,6 +55,28 @@ body{
                 display: inherit;
                 margin:auto;
             }
+        }
+
+        .img{
+            width: 100%;
+            max-height: 50vw;
+            object-fit: cover;
+            .img_section{
+                @extend .img;
+                border-top-left-radius: 4vw;
+                border-top-right-radius: 4vw;
+            }
+            // .img_logo{
+            //     margin: auto;
+            //     font-family: Shrakhand;
+            //     padding:15px;
+            //     height: 48px;
+            // }
+            // .img_main{
+            //     width: 100%;
+            //     max-height: 60vw;
+            //     object-fit: cover;
+            // }
         }
         
         .reservation{
@@ -200,7 +223,7 @@ body{
                 -webkit-border-radius: 100%;
                 animation:spinner 1.5s linear 2.5s infinite;
                 -webkit-animation:spinner 1.5s linear 2.5s infinite;
-}
+            }
             @keyframes spinner {
                 0%{ transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); }
                 100%{ transform: rotate(360deg); -webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); }
@@ -227,7 +250,7 @@ body{
         
             h3{
                 padding-left: 10px;
-                font-family: Shrinkhand;
+                font-family: Shrikhand;
                 color: black;
             }
         
@@ -239,17 +262,8 @@ body{
                 color: #333;
             }
         
-            .img{
-                width: 100%;
-                max-height: 50vw;
-                object-fit: cover;
-            }
         
-            .img_section{
-                @extend .img;
-                border-top-left-radius: 4vw;
-                border-top-right-radius: 4vw;
-            }
+            
         
             .legende_card{
                 display: flex;
@@ -283,38 +297,7 @@ body{
             }
         }
 
-        footer{
-            background: #333;
-            font-family: Roboto, sans-serif;
-            padding: 40px 30px;
-            color: #fff;
-            position: static;
         
-            img{
-                height: 2rem;
-                filter:invert(1);
-            }
-        
-            ul{
-              list-style-type: none;
-              margin-left: -40px;
-              font-size: 21px;
-              line-height: 37px;
-
-              li{
-                .email{
-                    text-decoration: none;
-                    color:#fff;
-                    }
-                i{
-                    padding-right: 10px;
-                    } 
-                i.fas.fa-hands-helping{
-                   font-size: 12px;
-                    }
-                }
-            }
-        }
     
 
 
@@ -332,23 +315,13 @@ body{
                         font-size: xx-large;
                         color:black;
                     }
-                    .img_logo{
-                        margin: auto;
-                        font-family: Shrankhan;
-                        padding:15px;
-                        height: 48px;
-                    }
                 }
 
-                .img_main{
-                    width: 100%;
-                    max-height: 60vw;
-                    object-fit: cover;
-                }
+                
 
                 .bg_legende{
                     padding-top:-15px;
-                    .legende_card {
+                    .legende {
                         display: flex;
                         width: 93%;
                         align-items: center;
@@ -364,8 +337,9 @@ body{
                         }
 
                         h1{
-                            @extend .legende_card;
                             font-size: 50px;
+                            font-family: shrikhand;
+                            font-style: oblique;
                             justify-content: space-between;
                             align-items: center;
                             font-weight: bold;
@@ -376,7 +350,7 @@ body{
             }
 
             h1, h2, h3{
-                font-family: Shrinkhand;
+                font-family: Shrikhand;
             }
 
             h2{
@@ -465,6 +439,39 @@ body{
             @extend .menu_du_gout;
         }
 
+
+        footer{
+            background: #333;
+            font-family: Roboto, sans-serif;
+            padding: 40px 30px;
+            color: #fff;
+            position: static;
+        
+            img{
+                height: 2rem;
+                filter:invert(1);
+            }
+        
+            ul{
+              list-style-type: none;
+              margin-left: -40px;
+              font-size: 21px;
+              line-height: 37px;
+
+              li{
+                .email{
+                    text-decoration: none;
+                    color:#fff;
+                    }
+                i{
+                    padding-right: 10px;
+                    } 
+                i.fas.fa-hands-helping{
+                   font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
 
