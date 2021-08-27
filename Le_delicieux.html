@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="https://fontawesome.com/">
     <link rel="shortcut icon" href="images/logo/ohmyfood@2x.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -44,21 +44,26 @@
 
 <body>
     <div class="container">
-        <main class="menus_card">
-            <div id="Le_delicieux" class="menu_des_sens">
-                <div class="heading">
-                    <div class="logo_arrow">
-                        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                        <img class="img_logo" src="images/logo/logohmyfood.png" alt="Logo Ohmyfood">
-                    </div>
-                    <img class="img_main" src="images/Le_delice_des_sens.JPG" alt="Le délice des sens">
-                    <div class="bg_legende">
-                        <div class="legende_card">
-                            <h1>La palette du goût</h1>
-                            <i class="fas fa-heart"></i>
-                        </div>
+
+        <header>
+            <div class="heading">
+                <div class="logo_arrow">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                    <img class="img_logo" src="images/logo/logohmyfood.png" alt="Logo Ohmyfood">
+                </div>
+                <img class="img_main" src="images/Le_delice_des_sens.JPG" alt="Le délice des sens">
+                <div class="bg_legende">
+                    <div class="legende">
+                        <h1>La palette du goût</h1>
+                        <i class="fas fa-heart"></i>
                     </div>
                 </div>
+            </div>
+        </header>
+
+        <main class="menus_card">
+            <div id="Le_delicieux" class="menu_des_sens">
+                
 
                 <h2>Entrées</h2>
                 <div class="entrees">
@@ -162,24 +167,24 @@
                     </div>
                 </div>
 
-                <!-- <div class="btn btn_commander">
+                <div class="btn btn_commander">
                     <a href="#"><span class="btn_text">Commander</span> </a>
                 </div> 
-
-                <footer>
-                    <div class="logo">
-                        <img class="img_logo_footer" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
-                    </div>
-                    <ul>
-                        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                        <li>Mentions légales</li>
-                        <li><a class="email" href="mailto:contact@ohmyfood.com">Contact</a></li>
-                    </ul>
-                </footer> -->
-
             </div>
-        </main>  
+        </main>
+
+        <footer>
+            <div class="logo">
+                <img class="img_logo_footer" src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+            </div>
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li><a class="email" href="mailto:contact@ohmyfood.com">Contact</a></li>
+            </ul>
+        </footer>
+
     </div>
 </body>
 </html>

@@ -200,7 +200,7 @@ body .container section .loader {
   height: 50px;
 }
 
-body .container section .loader_spinner {
+body .container section .loading_spinner {
   border-radius: 100%;
   border: 6px solid transparent;
   border-top-color: #fff;
