@@ -345,12 +345,11 @@ body{
             }
         }
 
-        .menu_du_gout{
-            background-color:$background-color;
-            margin-top:-15px;
-            .logo_arrow{
-                display: flex;
-                align-items: center;
+        .logo_arrow{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
                 i.fas.fa-arrow-left{
                     display: flex;
                     margin-right: auto;
@@ -358,11 +357,16 @@ body{
                     font-size: xx-large;
                     color:black;
                 }
-                .img_logo{
-                    @extend .logo;
-                }
             }
+            .img_logo{
+                @extend .logo;
+            }
+        }
 
+        .menu_du_gout{
+            background-color:$background-color;
+            margin-top:-15px;
+            
             .img_main{
                 width: 100%;
                 max-height: 60vw;
@@ -446,7 +450,7 @@ body{
                     font-style: normal;
                     font-size: 15px;
                     margin-top:-40px;
-                    
+
                     .prix{
                         margin-left: auto;
                     }

@@ -24,7 +24,7 @@ body .container header {
   margin: -16px;
 }
 
-body .container header .logo, body .container header .menu_du_gout .logo_arrow .img_logo, body .container .menu_du_gout .logo_arrow header .img_logo, body .container header .menu_enchante .logo_arrow .img_logo, body .container .menu_enchante .logo_arrow header .img_logo, body .container header .menu_francais .logo_arrow .img_logo, body .container .menu_francais .logo_arrow header .img_logo, body .container header .menu_des_sens .logo_arrow .img_logo, body .container .menu_des_sens .logo_arrow header .img_logo {
+body .container header .logo, body .container header .logo_arrow .img_logo, body .container .logo_arrow header .img_logo {
   height: 3rem;
   background-color: white;
   display: inherit;
@@ -288,12 +288,7 @@ body .container footer ul li i.fas.fa-hands-helping {
   font-size: 12px;
 }
 
-body .container .menu_du_gout, body .container .menu_enchante, body .container .menu_francais, body .container .menu_des_sens {
-  background-color: #f2f2f2;
-  margin-top: -15px;
-}
-
-body .container .menu_du_gout .logo_arrow, body .container .menu_enchante .logo_arrow, body .container .menu_francais .logo_arrow, body .container .menu_des_sens .logo_arrow {
+body .container .logo_arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +297,11 @@ body .container .menu_du_gout .logo_arrow, body .container .menu_enchante .logo_
           align-items: center;
 }
 
-body .container .menu_du_gout .logo_arrow i.fas.fa-arrow-left, body .container .menu_enchante .logo_arrow i.fas.fa-arrow-left, body .container .menu_francais .logo_arrow i.fas.fa-arrow-left, body .container .menu_des_sens .logo_arrow i.fas.fa-arrow-left {
+body .container .logo_arrow a {
+  text-decoration: none;
+}
+
+body .container .logo_arrow a i.fas.fa-arrow-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +309,11 @@ body .container .menu_du_gout .logo_arrow i.fas.fa-arrow-left, body .container .
   font-weight: 900;
   font-size: xx-large;
   color: black;
+}
+
+body .container .menu_du_gout, body .container .menu_enchante, body .container .menu_francais, body .container .menu_des_sens {
+  background-color: #f2f2f2;
+  margin-top: -15px;
 }
 
 body .container .menu_du_gout .img_main, body .container .menu_enchante .img_main, body .container .menu_francais .img_main, body .container .menu_des_sens .img_main {
