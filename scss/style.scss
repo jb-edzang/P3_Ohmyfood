@@ -375,7 +375,6 @@ body{
 
                 .bg_legende{
                     width: 108%;
-                    background-color: white;
                     .legende {
                         display: flex;
                         width: 93%;
@@ -383,16 +382,17 @@ body{
                         font-size: 36px;
                         font-style: italic;
                         height: 82px;
+                        box-sizing: border-box;
                         i.fas.fa-heart{
                             width: 20%;
                             display: inherit;
                             justify-content: center;
-                            padding-top: 74px;
+                            padding-top: 10%;
                             cursor: pointer;
                             font-weight:lighter;
-                            border-top-right-radius: 8vw;
+                            border-top-right-radius: 4vw;
                             background-color: white;
-                            margin-top:-86px;
+                            margin-top:-11%;
                         }
 
                         h1{
@@ -402,11 +402,12 @@ body{
                             justify-content: space-between;
                             align-items: center;
                             font-weight: bold;
-                            border-top-left-radius: 8vw;
+                            border-top-left-radius: 4vw;
                             background-color: white;
-                            margin-top:-40px;
-                            padding-top:50px;
+                            margin-top:-5%;
+                            padding-top:7%;
                             width: 80%;
+                            box-sizing: border-box;
                         }
                     }
                 }
@@ -438,11 +439,14 @@ body{
                 padding:0 4px 0 10px;
                 margin-top:15px;
                 cursor: pointer;
+                line-height: 44px;
+
                 .titre_prix{
                     @extend .legende_card;
                     font-style: normal;
                     font-size: 15px;
                     margin-top:-40px;
+                    
                     .prix{
                         margin-left: auto;
                     }

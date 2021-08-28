@@ -326,7 +326,6 @@ body .container .menu_du_gout .heading, body .container .menu_enchante .heading,
 
 body .container .menu_du_gout .heading .bg_legende, body .container .menu_enchante .heading .bg_legende, body .container .menu_francais .heading .bg_legende, body .container .menu_des_sens .heading .bg_legende {
   width: 108%;
-  background-color: white;
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende, body .container .menu_enchante .heading .bg_legende .legende, body .container .menu_francais .heading .bg_legende .legende, body .container .menu_des_sens .heading .bg_legende .legende {
@@ -340,6 +339,8 @@ body .container .menu_du_gout .heading .bg_legende .legende, body .container .me
   font-size: 36px;
   font-style: italic;
   height: 82px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart {
@@ -348,12 +349,12 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 74px;
+  padding-top: 10%;
   cursor: pointer;
   font-weight: lighter;
-  border-top-right-radius: 8vw;
+  border-top-right-radius: 4vw;
   background-color: white;
-  margin-top: -86px;
+  margin-top: -11%;
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende h1, body .container .menu_enchante .heading .bg_legende .legende h1, body .container .menu_francais .heading .bg_legende .legende h1, body .container .menu_des_sens .heading .bg_legende .legende h1 {
@@ -367,11 +368,13 @@ body .container .menu_du_gout .heading .bg_legende .legende h1, body .container 
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  border-top-left-radius: 8vw;
+  border-top-left-radius: 4vw;
   background-color: white;
-  margin-top: -40px;
-  padding-top: 50px;
+  margin-top: -5%;
+  padding-top: 7%;
   width: 80%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body .container .menu_du_gout h1, body .container .menu_enchante h1, body .container .menu_francais h1, body .container .menu_des_sens h1, body .container .menu_du_gout h2, body .container .menu_enchante h2, body .container .menu_francais h2, body .container .menu_des_sens h2, body .container .menu_du_gout h3, body .container .menu_enchante h3, body .container .menu_francais h3, body .container .menu_des_sens h3, body .container .menu_du_gout section h4, body .container section .menu_du_gout h4, body .container .menu_enchante section h4, body .container section .menu_enchante h4, body .container .menu_francais section h4, body .container section .menu_francais h4, body .container .menu_des_sens section h4, body .container section .menu_des_sens h4 {
@@ -400,6 +403,7 @@ body .container .menu_du_gout .entree, body .container .menu_enchante .entree, b
   padding: 0 4px 0 10px;
   margin-top: 15px;
   cursor: pointer;
+  line-height: 44px;
 }
 
 body .container .menu_du_gout .entree .titre_prix, body .container .menu_enchante .entree .titre_prix, body .container .menu_francais .entree .titre_prix, body .container .menu_des_sens .entree .titre_prix, body .container .menu_du_gout .plat .titre_prix, body .container .menu_enchante .plat .titre_prix, body .container .menu_francais .plat .titre_prix, body .container .menu_des_sens .plat .titre_prix, body .container .menu_du_gout .dessert .titre_prix, body .container .menu_enchante .dessert .titre_prix, body .container .menu_francais .dessert .titre_prix, body .container .menu_des_sens .dessert .titre_prix {
