@@ -218,13 +218,13 @@ body .container section .img_section {
   border-top-right-radius: 4vw;
 }
 
-body .container section .legende_card, body .container section .menu_du_gout .entree .titre_prix, body .container .menu_du_gout .entree section .titre_prix, body .container section .menu_enchante .entree .titre_prix, body .container .menu_enchante .entree section .titre_prix, body .container section .menu_francais .entree .titre_prix, body .container .menu_francais .entree section .titre_prix, body .container section .menu_des_sens .entree .titre_prix, body .container .menu_des_sens .entree section .titre_prix, body .container section .menu_du_gout .plat .titre_prix, body .container .menu_du_gout .plat section .titre_prix, body .container section .menu_enchante .plat .titre_prix, body .container .menu_enchante .plat section .titre_prix, body .container section .menu_francais .plat .titre_prix, body .container .menu_francais .plat section .titre_prix, body .container section .menu_des_sens .plat .titre_prix, body .container .menu_des_sens .plat section .titre_prix, body .container section .menu_du_gout .dessert .titre_prix, body .container .menu_du_gout .dessert section .titre_prix, body .container section .menu_enchante .dessert .titre_prix, body .container .menu_enchante .dessert section .titre_prix, body .container section .menu_francais .dessert .titre_prix, body .container .menu_francais .dessert section .titre_prix, body .container section .menu_des_sens .dessert .titre_prix, body .container .menu_des_sens .dessert section .titre_prix {
+body .container section .legende_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .container section .legende_card i, body .container section .menu_du_gout .entree .titre_prix i, body .container .menu_du_gout .entree section .titre_prix i, body .container section .menu_enchante .entree .titre_prix i, body .container .menu_enchante .entree section .titre_prix i, body .container section .menu_francais .entree .titre_prix i, body .container .menu_francais .entree section .titre_prix i, body .container section .menu_des_sens .entree .titre_prix i, body .container .menu_des_sens .entree section .titre_prix i, body .container section .menu_du_gout .plat .titre_prix i, body .container .menu_du_gout .plat section .titre_prix i, body .container section .menu_enchante .plat .titre_prix i, body .container .menu_enchante .plat section .titre_prix i, body .container section .menu_francais .plat .titre_prix i, body .container .menu_francais .plat section .titre_prix i, body .container section .menu_des_sens .plat .titre_prix i, body .container .menu_des_sens .plat section .titre_prix i, body .container section .menu_du_gout .dessert .titre_prix i, body .container .menu_du_gout .dessert section .titre_prix i, body .container section .menu_enchante .dessert .titre_prix i, body .container .menu_enchante .dessert section .titre_prix i, body .container section .menu_francais .dessert .titre_prix i, body .container .menu_francais .dessert section .titre_prix i, body .container section .menu_des_sens .dessert .titre_prix i, body .container .menu_des_sens .dessert section .titre_prix i {
+body .container section .legende_card i {
   margin-left: auto;
   margin-top: 20px;
   font-size: 30px;
@@ -233,7 +233,7 @@ body .container section .legende_card i, body .container section .menu_du_gout .
   width: 15%;
 }
 
-body .container section .legende_card i:hover, body .container section .menu_du_gout .entree .titre_prix i:hover, body .container .menu_du_gout .entree section .titre_prix i:hover, body .container section .menu_enchante .entree .titre_prix i:hover, body .container .menu_enchante .entree section .titre_prix i:hover, body .container section .menu_francais .entree .titre_prix i:hover, body .container .menu_francais .entree section .titre_prix i:hover, body .container section .menu_des_sens .entree .titre_prix i:hover, body .container .menu_des_sens .entree section .titre_prix i:hover, body .container section .menu_du_gout .plat .titre_prix i:hover, body .container .menu_du_gout .plat section .titre_prix i:hover, body .container section .menu_enchante .plat .titre_prix i:hover, body .container .menu_enchante .plat section .titre_prix i:hover, body .container section .menu_francais .plat .titre_prix i:hover, body .container .menu_francais .plat section .titre_prix i:hover, body .container section .menu_des_sens .plat .titre_prix i:hover, body .container .menu_des_sens .plat section .titre_prix i:hover, body .container section .menu_du_gout .dessert .titre_prix i:hover, body .container .menu_du_gout .dessert section .titre_prix i:hover, body .container section .menu_enchante .dessert .titre_prix i:hover, body .container .menu_enchante .dessert section .titre_prix i:hover, body .container section .menu_francais .dessert .titre_prix i:hover, body .container .menu_francais .dessert section .titre_prix i:hover, body .container section .menu_des_sens .dessert .titre_prix i:hover, body .container .menu_des_sens .dessert section .titre_prix i:hover {
+body .container section .legende_card i:hover {
   color: #9356dc;
   cursor: pointer;
   font-weight: bolder;
@@ -399,7 +399,7 @@ body .container .menu_du_gout h2, body .container .menu_enchante h2, body .conta
   text-shadow: 1px 1px 1px;
 }
 
-body .container .menu_du_gout .entree, body .container .menu_enchante .entree, body .container .menu_francais .entree, body .container .menu_des_sens .entree, body .container .menu_du_gout .plat, body .container .menu_du_gout .menu_enchante .plat, body .container .menu_enchante .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_du_gout .menu_francais .plat, body .container .menu_francais .menu_du_gout .plat, body .container .menu_enchante .menu_francais .plat, body .container .menu_francais .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_du_gout .menu_des_sens .plat, body .container .menu_des_sens .menu_du_gout .plat, body .container .menu_enchante .menu_des_sens .plat, body .container .menu_des_sens .menu_enchante .plat, body .container .menu_francais .menu_des_sens .plat, body .container .menu_des_sens .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert, body .container .menu_du_gout .menu_enchante .dessert, body .container .menu_enchante .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_du_gout .menu_francais .dessert, body .container .menu_francais .menu_du_gout .dessert, body .container .menu_enchante .menu_francais .dessert, body .container .menu_francais .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_du_gout .menu_des_sens .dessert, body .container .menu_des_sens .menu_du_gout .dessert, body .container .menu_enchante .menu_des_sens .dessert, body .container .menu_des_sens .menu_enchante .dessert, body .container .menu_francais .menu_des_sens .dessert, body .container .menu_des_sens .menu_francais .dessert, body .container .menu_des_sens .dessert {
+body .container .menu_du_gout .entree, body .container .menu_enchante .entree, body .container .menu_francais .entree, body .container .menu_des_sens .entree, body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert {
   border: 1px solid white;
   background-color: white;
   border-radius: 20px;
@@ -411,6 +411,10 @@ body .container .menu_du_gout .entree, body .container .menu_enchante .entree, b
 }
 
 body .container .menu_du_gout .entree .titre_prix, body .container .menu_enchante .entree .titre_prix, body .container .menu_francais .entree .titre_prix, body .container .menu_des_sens .entree .titre_prix, body .container .menu_du_gout .plat .titre_prix, body .container .menu_enchante .plat .titre_prix, body .container .menu_francais .plat .titre_prix, body .container .menu_des_sens .plat .titre_prix, body .container .menu_du_gout .dessert .titre_prix, body .container .menu_enchante .dessert .titre_prix, body .container .menu_francais .dessert .titre_prix, body .container .menu_des_sens .dessert .titre_prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 93%;
   font-style: normal;
   font-size: 15px;
   margin-top: -40px;
