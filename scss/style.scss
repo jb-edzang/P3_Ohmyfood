@@ -434,7 +434,7 @@ body{
                 text-transform: uppercase;
                 text-shadow: 1px 1px 1px;
             }
-            
+
             .entree{
                 border: 1px solid white;
                 background-color: white;
@@ -443,14 +443,16 @@ body{
                 padding:0 4px 0 10px;
                 margin-top:15px;
                 cursor: pointer;
-                line-height: 44px;
-
+                line-height: 50px;
+                animation: fade-1 3s linear 1s infinite running;
+                
                 .titre_prix{
                     display: flex;
                     width: 93%;
                     font-style: normal;
                     font-size: 15px;
                     margin-top:-40px;
+
                     .prix{
                         margin-left: auto;
                     }
@@ -458,15 +460,66 @@ body{
                 .check_circle{
                     position:absolute;
                     overflow: hidden;
+
                     i.fas.fa-check-circle{
                         position:relative;
                         top:-45px;
                     }
                 }
             }
+            @keyframes fade-1 {
+                0%{
+                    opacity: 0;
+                }
+                90%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            .entree:nth-child(1){
+                animation-delay: 0.1s;
+            }
+            .entree:nth-child(2){
+                animation-delay: 0.25s;
+            }
+            .entree:nth-child(3){
+                animation-delay: 0.35s;
+            }
+            .entree:nth-child(4){
+                animation-delay: 0.45s;
+            }
+            
             .plat, .dessert{
                 @extend .entree;
             }
+            .plat:nth-child(1){
+                animation-delay: 1.55s;
+            }
+            .plat, .dessert:nth-child(2){
+                animation-delay: 1.66s;
+            }                
+            .plat, .dessert:nth-child(3){
+                animation-delay: 1.77s;
+            }
+            .plat, .dessert:nth-child(4){
+                animation-delay: 1.88s;
+            }
+
+            .dessert:nth-child(1){
+                animation-delay: 2s;
+            }
+            .dessert, .dessert:nth-child(2){
+                animation-delay: 2.55s;
+            }                
+            .dessert, .dessert:nth-child(3){
+                animation-delay: 2.66s;
+            }
+            .dessert, .dessert:nth-child(4){
+                animation-delay: 2.77s;
+            }
+
         }
 
         .btn_commander{

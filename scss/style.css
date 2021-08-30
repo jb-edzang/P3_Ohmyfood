@@ -407,7 +407,9 @@ body .container .menu_du_gout .entree, body .container .menu_enchante .entree, b
   padding: 0 4px 0 10px;
   margin-top: 15px;
   cursor: pointer;
-  line-height: 44px;
+  line-height: 50px;
+  -webkit-animation: fade-1 3s linear 1s infinite running;
+          animation: fade-1 3s linear 1s infinite running;
 }
 
 body .container .menu_du_gout .entree .titre_prix, body .container .menu_enchante .entree .titre_prix, body .container .menu_francais .entree .titre_prix, body .container .menu_des_sens .entree .titre_prix, body .container .menu_du_gout .plat .titre_prix, body .container .menu_enchante .plat .titre_prix, body .container .menu_francais .plat .titre_prix, body .container .menu_des_sens .plat .titre_prix, body .container .menu_du_gout .dessert .titre_prix, body .container .menu_enchante .dessert .titre_prix, body .container .menu_francais .dessert .titre_prix, body .container .menu_des_sens .dessert .titre_prix {
@@ -432,6 +434,90 @@ body .container .menu_du_gout .entree .check_circle, body .container .menu_encha
 body .container .menu_du_gout .entree .check_circle i.fas.fa-check-circle, body .container .menu_enchante .entree .check_circle i.fas.fa-check-circle, body .container .menu_francais .entree .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .entree .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .plat .check_circle i.fas.fa-check-circle, body .container .menu_enchante .plat .check_circle i.fas.fa-check-circle, body .container .menu_francais .plat .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .plat .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .dessert .check_circle i.fas.fa-check-circle, body .container .menu_enchante .dessert .check_circle i.fas.fa-check-circle, body .container .menu_francais .dessert .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .dessert .check_circle i.fas.fa-check-circle {
   position: relative;
   top: -45px;
+}
+
+@-webkit-keyframes fade-1 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-1 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body .container .menu_du_gout .entree:nth-child(1), body .container .menu_enchante .entree:nth-child(1), body .container .menu_francais .entree:nth-child(1), body .container .menu_des_sens .entree:nth-child(1), body .container .menu_du_gout .plat:nth-child(1), body .container .menu_enchante .plat:nth-child(1), body .container .menu_francais .plat:nth-child(1), body .container .menu_des_sens .plat:nth-child(1), body .container .menu_du_gout .dessert:nth-child(1), body .container .menu_enchante .dessert:nth-child(1), body .container .menu_francais .dessert:nth-child(1), body .container .menu_des_sens .dessert:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+body .container .menu_du_gout .entree:nth-child(2), body .container .menu_enchante .entree:nth-child(2), body .container .menu_francais .entree:nth-child(2), body .container .menu_des_sens .entree:nth-child(2), body .container .menu_du_gout .plat:nth-child(2), body .container .menu_enchante .plat:nth-child(2), body .container .menu_francais .plat:nth-child(2), body .container .menu_des_sens .plat:nth-child(2), body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+body .container .menu_du_gout .entree:nth-child(3), body .container .menu_enchante .entree:nth-child(3), body .container .menu_francais .entree:nth-child(3), body .container .menu_des_sens .entree:nth-child(3), body .container .menu_du_gout .plat:nth-child(3), body .container .menu_enchante .plat:nth-child(3), body .container .menu_francais .plat:nth-child(3), body .container .menu_des_sens .plat:nth-child(3), body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+body .container .menu_du_gout .entree:nth-child(4), body .container .menu_enchante .entree:nth-child(4), body .container .menu_francais .entree:nth-child(4), body .container .menu_des_sens .entree:nth-child(4), body .container .menu_du_gout .plat:nth-child(4), body .container .menu_enchante .plat:nth-child(4), body .container .menu_francais .plat:nth-child(4), body .container .menu_des_sens .plat:nth-child(4), body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+
+body .container .menu_du_gout .plat:nth-child(1), body .container .menu_enchante .plat:nth-child(1), body .container .menu_francais .plat:nth-child(1), body .container .menu_des_sens .plat:nth-child(1) {
+  -webkit-animation-delay: 1.55s;
+          animation-delay: 1.55s;
+}
+
+body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
+  -webkit-animation-delay: 1.66s;
+          animation-delay: 1.66s;
+}
+
+body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
+  -webkit-animation-delay: 1.77s;
+          animation-delay: 1.77s;
+}
+
+body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
+  -webkit-animation-delay: 1.88s;
+          animation-delay: 1.88s;
+}
+
+body .container .menu_du_gout .dessert:nth-child(1), body .container .menu_enchante .dessert:nth-child(1), body .container .menu_francais .dessert:nth-child(1), body .container .menu_des_sens .dessert:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
+  -webkit-animation-delay: 2.55s;
+          animation-delay: 2.55s;
+}
+
+body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
+  -webkit-animation-delay: 2.66s;
+          animation-delay: 2.66s;
+}
+
+body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
+  -webkit-animation-delay: 2.77s;
+          animation-delay: 2.77s;
 }
 
 body .container .btn_commander {
