@@ -13,15 +13,87 @@ body {
   background: #f2f2f2;
 }
 
+body .loader-spinner {
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #99e2d0;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+
+body .loader-spinner {
+  position: absolute;
+  border-radius: 100%;
+  border-top: 5px solid blue;
+  border-top-color: #e74c3c;
+  left: 300px;
+  -webkit-border-radius: 100%;
+  animation: spinner 1.5s linear 2.5s both;
+  -webkit-animation: spinner 3s linear 0.1s both;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
 body .container {
   margin: auto;
-  max-width: 768px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 body .container header {
   background-color: white;
   padding: 20px;
-  margin: -16px;
+  margin: -16px 0;
 }
 
 body .container header .logo, body .container header .logo_arrow .img_logo, body .container .logo_arrow header .img_logo {
@@ -75,6 +147,7 @@ body .container .reservation .search input::-webkit-input-placeholder {
 
 body .container .reservation .search input {
   border: none;
+  background-color: #e0e0e0;
 }
 
 body .container .reservation .title_reservation {
@@ -123,16 +196,30 @@ body .container aside .offre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  grid-gap: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 50px;
   font-weight: bold;
+  grid-gap: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  body .container aside .offre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 body .container aside .offre i {
@@ -180,6 +267,20 @@ body .container section {
   background-color: #eee;
 }
 
+@media screen and (min-width: 1200px) {
+  body .container section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 body .container section a {
   text-decoration: none;
 }
@@ -200,7 +301,7 @@ body .container section h3, body .container section h4 {
 }
 
 body .container section h4 {
-  font-weight: 300;
+  font-weight: lighter;
   font-size: 19px;
   margin-top: -15px;
   color: #333;
@@ -244,7 +345,7 @@ body .container section .legende_card i:hover {
 body .container section .new_label {
   position: absolute;
   top: 20px;
-  right: 12px;
+  right: 35px;
   width: 100px;
   background: #99e2d0;
   color: #058868;
@@ -316,6 +417,20 @@ body .container .menu_du_gout, body .container .menu_enchante, body .container .
   margin-top: -15px;
 }
 
+@media screen and (min-width: 1200px) {
+  body .container .menu_du_gout, body .container .menu_enchante, body .container .menu_francais, body .container .menu_des_sens {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 body .container .menu_du_gout .img_main, body .container .menu_enchante .img_main, body .container .menu_francais .img_main, body .container .menu_des_sens .img_main {
   width: 100%;
   max-height: 60vw;
@@ -356,13 +471,51 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   padding-top: 10%;
   cursor: pointer;
   font-weight: lighter;
+  font-size: 7vw;
   border-top-right-radius: 4vw;
   background-color: white;
   margin-top: -11%;
 }
 
+body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart:hover {
+  transition: 2s ease-in-out;
+  width: 20%;
+  animation: coeur 8s both;
+  -webkit-animation: coeur 1s both;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+}
+
+@-webkit-keyframes coeur {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+    font-weight: bold;
+    color: #9356dc;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+}
+
+@keyframes coeur {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+    font-weight: bold;
+    color: #9356dc;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+}
+
 body .container .menu_du_gout .heading .bg_legende .legende h1, body .container .menu_enchante .heading .bg_legende .legende h1, body .container .menu_francais .heading .bg_legende .legende h1, body .container .menu_des_sens .heading .bg_legende .legende h1 {
-  font-size: 50px;
+  font-size: 7vw;
   font-family: shrikhand;
   font-style: oblique;
   -webkit-box-pack: justify;
@@ -408,8 +561,12 @@ body .container .menu_du_gout .entree, body .container .menu_enchante .entree, b
   margin-top: 15px;
   cursor: pointer;
   line-height: 50px;
-  -webkit-animation: fade-1 3s linear 1s infinite running;
-          animation: fade-1 3s linear 1s infinite running;
+  -webkit-animation-name: fade-1;
+          animation-name: fade-1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 body .container .menu_du_gout .entree .titre_prix, body .container .menu_enchante .entree .titre_prix, body .container .menu_francais .entree .titre_prix, body .container .menu_des_sens .entree .titre_prix, body .container .menu_du_gout .plat .titre_prix, body .container .menu_enchante .plat .titre_prix, body .container .menu_francais .plat .titre_prix, body .container .menu_des_sens .plat .titre_prix, body .container .menu_du_gout .dessert .titre_prix, body .container .menu_enchante .dessert .titre_prix, body .container .menu_francais .dessert .titre_prix, body .container .menu_des_sens .dessert .titre_prix {
@@ -426,98 +583,146 @@ body .container .menu_du_gout .entree .titre_prix .prix, body .container .menu_e
   margin-left: auto;
 }
 
-body .container .menu_du_gout .entree .check_circle, body .container .menu_enchante .entree .check_circle, body .container .menu_francais .entree .check_circle, body .container .menu_des_sens .entree .check_circle, body .container .menu_du_gout .plat .check_circle, body .container .menu_enchante .plat .check_circle, body .container .menu_francais .plat .check_circle, body .container .menu_des_sens .plat .check_circle, body .container .menu_du_gout .dessert .check_circle, body .container .menu_enchante .dessert .check_circle, body .container .menu_francais .dessert .check_circle, body .container .menu_des_sens .dessert .check_circle {
+body .container .menu_du_gout .entree i.fas.fa-check-circle, body .container .menu_enchante .entree i.fas.fa-check-circle, body .container .menu_francais .entree i.fas.fa-check-circle, body .container .menu_des_sens .entree i.fas.fa-check-circle, body .container .menu_du_gout .plat i.fas.fa-check-circle, body .container .menu_enchante .plat i.fas.fa-check-circle, body .container .menu_francais .plat i.fas.fa-check-circle, body .container .menu_des_sens .plat i.fas.fa-check-circle, body .container .menu_du_gout .dessert i.fas.fa-check-circle, body .container .menu_enchante .dessert i.fas.fa-check-circle, body .container .menu_francais .dessert i.fas.fa-check-circle, body .container .menu_des_sens .dessert i.fas.fa-check-circle {
   position: absolute;
-  overflow: hidden;
+  font-weight: lighter;
+  top: 64%;
+  right: 35px;
+  font-size: 0;
 }
 
-body .container .menu_du_gout .entree .check_circle i.fas.fa-check-circle, body .container .menu_enchante .entree .check_circle i.fas.fa-check-circle, body .container .menu_francais .entree .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .entree .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .plat .check_circle i.fas.fa-check-circle, body .container .menu_enchante .plat .check_circle i.fas.fa-check-circle, body .container .menu_francais .plat .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .plat .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .dessert .check_circle i.fas.fa-check-circle, body .container .menu_enchante .dessert .check_circle i.fas.fa-check-circle, body .container .menu_francais .dessert .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .dessert .check_circle i.fas.fa-check-circle {
+body .container .menu_du_gout:active i.fas.fa-check-circle, body .container .menu_enchante:active i.fas.fa-check-circle, body .container .menu_francais:active i.fas.fa-check-circle, body .container .menu_des_sens:active i.fas.fa-check-circle {
+  animation: fade-2 0.5s ease-in-out;
+  -webkit-animation: fade-2 0.1ms both;
+}
+
+body .container .menu_du_gout:active .prix, body .container .menu_enchante:active .prix, body .container .menu_francais:active .prix, body .container .menu_des_sens:active .prix {
   position: relative;
-  top: -45px;
+  margin-left: 40%;
+  animation: fade-3 0.1ms linear;
+  -webkit-transition: fade-3 0.1ms linear;
+  -moz-transition: fade-3 0.1ms linear;
+  -ms-transition: fade-3 0.1ms linear;
+  -o-transition: fade-3 0.1ms linear;
+  -webkit-animation: fade-3 0.1ms linear;
 }
 
 @-webkit-keyframes fade-1 {
   0% {
     opacity: 0;
-  }
-  90% {
-    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
   }
   100% {
-    opacity: 0;
+    opacity: 1;
+    transform: 0;
+    -webkit-transform: 0;
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
   }
 }
 
 @keyframes fade-1 {
   0% {
     opacity: 0;
-  }
-  90% {
-    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
   }
   100% {
-    opacity: 0;
+    opacity: 1;
+    transform: 0;
+    -webkit-transform: 0;
+    -moz-transform: 0;
+    -ms-transform: 0;
+    -o-transform: 0;
   }
 }
 
-body .container .menu_du_gout .entree:nth-child(1), body .container .menu_enchante .entree:nth-child(1), body .container .menu_francais .entree:nth-child(1), body .container .menu_des_sens .entree:nth-child(1), body .container .menu_du_gout .plat:nth-child(1), body .container .menu_enchante .plat:nth-child(1), body .container .menu_francais .plat:nth-child(1), body .container .menu_des_sens .plat:nth-child(1), body .container .menu_du_gout .dessert:nth-child(1), body .container .menu_enchante .dessert:nth-child(1), body .container .menu_francais .dessert:nth-child(1), body .container .menu_des_sens .dessert:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+@-webkit-keyframes fade-2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) scale(0);
+    -webkit-transform: translate3d(100%, 0, 0) scale(0);
+    -moz-transform: translate3d(100%, 0, 0) scale(0);
+    -ms-transform: translate3d(100%, 0, 0) scale(0);
+    -o-transform: translate3d(100%, 0, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    background-color: #058868;
+    padding: 21px;
+    width: 10%;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 47px;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
 }
 
-body .container .menu_du_gout .entree:nth-child(2), body .container .menu_enchante .entree:nth-child(2), body .container .menu_francais .entree:nth-child(2), body .container .menu_des_sens .entree:nth-child(2), body .container .menu_du_gout .plat:nth-child(2), body .container .menu_enchante .plat:nth-child(2), body .container .menu_francais .plat:nth-child(2), body .container .menu_des_sens .plat:nth-child(2), body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+@keyframes fade-2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) scale(0);
+    -webkit-transform: translate3d(100%, 0, 0) scale(0);
+    -moz-transform: translate3d(100%, 0, 0) scale(0);
+    -ms-transform: translate3d(100%, 0, 0) scale(0);
+    -o-transform: translate3d(100%, 0, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    background-color: #058868;
+    padding: 21px;
+    width: 10%;
+    font-weight: lighter;
+    font-size: 40px;
+    line-height: 47px;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
 }
 
-body .container .menu_du_gout .entree:nth-child(3), body .container .menu_enchante .entree:nth-child(3), body .container .menu_francais .entree:nth-child(3), body .container .menu_des_sens .entree:nth-child(3), body .container .menu_du_gout .plat:nth-child(3), body .container .menu_enchante .plat:nth-child(3), body .container .menu_francais .plat:nth-child(3), body .container .menu_des_sens .plat:nth-child(3), body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+@-webkit-keyframes fade-3 {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-left: 40%;
+  }
 }
 
-body .container .menu_du_gout .entree:nth-child(4), body .container .menu_enchante .entree:nth-child(4), body .container .menu_francais .entree:nth-child(4), body .container .menu_des_sens .entree:nth-child(4), body .container .menu_du_gout .plat:nth-child(4), body .container .menu_enchante .plat:nth-child(4), body .container .menu_francais .plat:nth-child(4), body .container .menu_des_sens .plat:nth-child(4), body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
-}
-
-body .container .menu_du_gout .plat:nth-child(1), body .container .menu_enchante .plat:nth-child(1), body .container .menu_francais .plat:nth-child(1), body .container .menu_des_sens .plat:nth-child(1) {
-  -webkit-animation-delay: 1.55s;
-          animation-delay: 1.55s;
-}
-
-body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
-  -webkit-animation-delay: 1.66s;
-          animation-delay: 1.66s;
-}
-
-body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
-  -webkit-animation-delay: 1.77s;
-          animation-delay: 1.77s;
-}
-
-body .container .menu_du_gout .plat, body .container .menu_enchante .plat, body .container .menu_francais .plat, body .container .menu_des_sens .plat, body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
-  -webkit-animation-delay: 1.88s;
-          animation-delay: 1.88s;
-}
-
-body .container .menu_du_gout .dessert:nth-child(1), body .container .menu_enchante .dessert:nth-child(1), body .container .menu_francais .dessert:nth-child(1), body .container .menu_des_sens .dessert:nth-child(1) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(2), body .container .menu_enchante .dessert:nth-child(2), body .container .menu_francais .dessert:nth-child(2), body .container .menu_des_sens .dessert:nth-child(2) {
-  -webkit-animation-delay: 2.55s;
-          animation-delay: 2.55s;
-}
-
-body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(3), body .container .menu_enchante .dessert:nth-child(3), body .container .menu_francais .dessert:nth-child(3), body .container .menu_des_sens .dessert:nth-child(3) {
-  -webkit-animation-delay: 2.66s;
-          animation-delay: 2.66s;
-}
-
-body .container .menu_du_gout .dessert, body .container .menu_enchante .dessert, body .container .menu_francais .dessert, body .container .menu_des_sens .dessert, body .container .menu_du_gout .dessert:nth-child(4), body .container .menu_enchante .dessert:nth-child(4), body .container .menu_francais .dessert:nth-child(4), body .container .menu_des_sens .dessert:nth-child(4) {
-  -webkit-animation-delay: 2.77s;
-          animation-delay: 2.77s;
+@keyframes fade-3 {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-left: 40%;
+  }
 }
 
 body .container .btn_commander {
@@ -537,6 +742,8 @@ body .container .btn_commander {
   margin-bottom: 50px;
   padding: 26px;
   border-radius: 50px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 body .container .btn_commander a {
