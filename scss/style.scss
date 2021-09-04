@@ -51,8 +51,8 @@ body{
         border-radius: 100%;
         border: 6px solid $Tertiaire;
         position:relative;
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        width: 350px;
         overflow: hidden;
     }
     
@@ -61,11 +61,11 @@ body{
         border-radius: 100%;
         border-top: 5px solid blue;
         border-top-color: rgba(231, 76, 60,1.0);
-        left: 300px;
+        left: 150px;
         -webkit-border-radius: 100%;
-        animation:spinner 1.5s linear 2.5s both;
-        -webkit-animation:spinner 3s linear 0.1s both;
-    }
+        animation:spinner 3s linear 0.5ms both;
+        -webkit-animation:spinner 3s linear 0.5ms both;
+}
 
     @keyframes spinner {
         0%{
@@ -435,7 +435,6 @@ body{
                             @keyframes coeur {
                                 0%{
                                     background-position: 0% 0%;
-                                    // color: rgb(147,86,220);
                                 }
                                 100%{
                                     background-position: 100% 100%;
@@ -482,37 +481,40 @@ body{
                 text-shadow: 1px 1px 1px;
             }
 
-            .entree{
-                border: 1px solid white;
-                background-color: white;
-                border-radius: 20px;
-                border-bottom-color: #dad0d0;
-                padding:0 4px 0 10px;
-                margin-top:15px;
-                cursor: pointer;
-                line-height: 50px;
-                animation-name: fade-1;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both; 
-                .titre_prix{
-                    display: flex;
-                    width: 93%;
-                    font-style: normal;
-                    font-size: 15px;
-                    margin-top:-40px;
-                    .prix{
-                        margin-left: auto;
+            .entrees{
+                .entree{
+                    border: 1px solid white;
+                    background-color: white;
+                    border-radius: 20px;
+                    border-bottom-color: #dad0d0;
+                    padding:0 4px 0 10px;
+                    margin-top:15px;
+                    cursor: pointer;
+                    line-height: 50px;
+                    animation-name: fade-1;
+                    -webkit-animation-duration: 2.5s;
+                    animation-duration: 2.5ms;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both; 
+                    .titre_prix{
+                        display: flex;
+                        width: 93%;
+                        font-style: normal;
+                        font-size: 15px;
+                        margin-top:-40px;
+                        .prix{
+                            margin-left: auto;
+                        }
                     }
+                    i.fas.fa-check-circle{
+                        position: absolute;
+                        font-weight: lighter;
+                        top:62%;
+                        right: 35px;
+                        font-size: 0;
+                    } 
                 }
-                i.fas.fa-check-circle{
-                    position: absolute;
-                    font-weight: lighter;
-                    top:64%;
-                    right: 35px;
-                    font-size: 0;
-                } 
+                
             }
             &:active{
                 i.fas.fa-check-circle{
@@ -521,24 +523,29 @@ body{
                 }
                 .prix{
                     position: relative;
-                    margin-left: 40%;
-                    animation: fade-3 0.1ms linear;
-                    -webkit-transition: fade-3 0.1ms linear;
-                    -moz-transition: fade-3 0.1ms linear;
-                    -ms-transition: fade-3 0.1ms linear;
-                    -o-transition: fade-3 0.1ms linear;
-                    -webkit-animation: fade-3 0.1ms linear;
+                    animation: slide 0.1ms both;
+                    -webkit-transition: slide 0.1ms both;
+                    -moz-transition: slide 0.1ms both;
+                    -ms-transition: slide 0.1ms both;
+                    -o-transition: slide 0.1ms both;
+                    -webkit-animation: slide 0.1ms both;
+                }
+                .titre{
+                    animation: clip 0.1ms both;
+                    -webkit-animation: clip 0.1ms both;
+                    text-overflow: ellipsis;
                 }
             }
+
 
             @keyframes fade-1 {
                 0%{
                     opacity: 0;
-                    transform: translate3d(-100%, 0, 0);
-                    -webkit-transform: translate3d(-100%, 0, 0);
-                    -moz-transform: translate3d(-100%, 0, 0);
-                    -ms-transform: translate3d(-100%, 0, 0);
-                    -o-transform: translate3d(-100%, 0, 0);
+                    transform: translate3d(0, 500px, 0);
+                    -webkit-transform: translate3d(0, 500px, 0);
+                    -moz-transform: translate3d(0, 500px, 0);
+                    -ms-transform: translate3d(0, 500px, 0);
+                    -o-transform: translate3d(0, 500px, 0);
                 }
                 100%{
                     opacity: 1;
@@ -550,6 +557,7 @@ body{
                 }
             }
 
+            
             @keyframes fade-2 {
                 0% {
                     opacity: 0;
@@ -559,11 +567,10 @@ body{
                     -ms-transform: translate3d(100%, 0, 0) scale(0);
                     -o-transform: translate3d(100%, 0, 0) scale(0);
                 }
-
                 100% {
                     opacity: 1;
                     transform: none;
-                    background-color: #058868;
+                    background-color: $Tertiaire;
                     padding:21px;
                     width: 10%;
                     font-weight: lighter;
@@ -578,18 +585,41 @@ body{
                 }                   
             }
 
-            @keyframes fade-3 {
+            @keyframes slide {
                 0% {
                     -webkit-transform: translateX(100%);
                     transform: translateX(100%);
                     visibility: visible;
                 }
                 100% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                    margin-left: 40%;
+                    -webkit-transform: translateX(-300%);
+                    transform: translateX(-300%);
+                    -moz-transform: translateX(-300%);
+                    -ms-transform: translateX(-300%);
+                    -o-transform: translateX(-300%);
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
+
+            @keyframes clip{
+                0%{
+                    visibility: 1;
+                }
+                100%{
+                    display:-webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+           
+            .plats, .desserts{
+                @extend .entrees;
+            }
+
 
             .plat, .dessert{
                 @extend .entree;
