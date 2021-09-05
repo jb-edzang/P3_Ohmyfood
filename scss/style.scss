@@ -481,8 +481,15 @@ body{
                 text-shadow: 1px 1px 1px;
             }
 
-            .entrees{
-                .entree{
+            .entrees, .plats, .desserts {
+                animation-name: fade-1;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                .entree, .plat, .dessert {
                     border: 1px solid white;
                     background-color: white;
                     border-radius: 20px;
@@ -490,12 +497,8 @@ body{
                     padding:0 4px 0 10px;
                     margin-top:15px;
                     cursor: pointer;
-                    line-height: 50px;
-                    animation-name: fade-1;
-                    -webkit-animation-duration: 2.5s;
-                    animation-duration: 2.5ms;
-                    -webkit-animation-fill-mode: both;
-                    animation-fill-mode: both; 
+                    line-height: 53px;
+                    
                     .titre_prix{
                         display: flex;
                         width: 93%;
@@ -508,21 +511,21 @@ body{
                     }
                     i.fas.fa-check-circle{
                         position: absolute;
-                        font-weight: lighter;
-                        top:62%;
-                        right: 35px;
                         font-size: 0;
                     } 
                 }
-                
             }
             &:active{
                 i.fas.fa-check-circle{
+                    font-weight: lighter;
+                    top:60%;
+                    right: 35px;
                     animation:fade-2 0.5s ease-in-out;
                     -webkit-animation:fade-2 0.1ms both;
                 }
                 .prix{
                     position: relative;
+                    margin-lef:40%;
                     animation: slide 0.1ms both;
                     -webkit-transition: slide 0.1ms both;
                     -moz-transition: slide 0.1ms both;
@@ -537,15 +540,14 @@ body{
                 }
             }
 
-
             @keyframes fade-1 {
                 0%{
                     opacity: 0;
-                    transform: translate3d(0, 500px, 0);
-                    -webkit-transform: translate3d(0, 500px, 0);
-                    -moz-transform: translate3d(0, 500px, 0);
-                    -ms-transform: translate3d(0, 500px, 0);
-                    -o-transform: translate3d(0, 500px, 0);
+                    transform: translate3d(-1000px, 0, 0);
+                    -webkit-transform: translate3d(-1000px, 0, 0);
+                    -moz-transform: translate3d(-1000px, 0, 0);
+                    -ms-transform: translate3d(-1000px, 0, 0);
+                    -o-transform: translate3d(-1000px, 0, 0);
                 }
                 100%{
                     opacity: 1;
@@ -556,8 +558,16 @@ body{
                     -o-transform: 0;
                 }
             }
+            .entrees{
+                animation-delay:0.1ms;
+            }
+            .plats{
+                animation-delay:1s;
+            }
+            .desserts{
+                animation-delay:2s;
+            }
 
-            
             @keyframes fade-2 {
                 0% {
                     opacity: 0;
@@ -571,20 +581,20 @@ body{
                     opacity: 1;
                     transform: none;
                     background-color: $Tertiaire;
-                    padding:21px;
+                    padding:22px;
                     width: 10%;
                     font-weight: lighter;
-                    font-size: 40px;
-                    line-height: 47px;
-                    border-top-right-radius: 3vh;
-                    border-bottom-right-radius: 3vh;
+                    font-size: 41px;
+                    line-height: 52px;
+                    border-top-right-radius: 2vh;
+                    border-bottom-right-radius: 2vh;
                     -webkit-transform: none;
                     -moz-transform: none;
                     -ms-transform: none;
                     -o-transform: none;
                 }                   
             }
-
+            
             @keyframes slide {
                 0% {
                     -webkit-transform: translateX(100%);
@@ -609,21 +619,18 @@ body{
                 100%{
                     display:-webkit-box;
                     -webkit-box-orient: vertical;
-                    -webkit-line-clamp: 4;
+                    -webkit-line-clamp: 3;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                 }
             }
-           
-            .plats, .desserts{
-                @extend .entrees;
-            }
 
-
-            .plat, .dessert{
-                @extend .entree;
-            }
+            // @for $i from 1 through 4 {
+            //     .entree-#{$i}{
+            //         animation-duration: ($i * 1s);
+            //     }
+            // }
         }
 
         .btn_commander{
