@@ -534,13 +534,10 @@ body .container .menu_du_gout .heading .bg_legende .legende h1, body .container 
           box-sizing: border-box;
 }
 
-body .container .menu_du_gout h1, body .container .menu_enchante h1, body .container .menu_francais h1, body .container .menu_des_sens h1, body .container .menu_du_gout h2, body .container .menu_enchante h2, body .container .menu_francais h2, body .container .menu_des_sens h2, body .container .menu_du_gout h3, body .container .menu_enchante h3, body .container .menu_francais h3, body .container .menu_des_sens h3, body .container .menu_du_gout section h4, body .container section .menu_du_gout h4, body .container .menu_enchante section h4, body .container section .menu_enchante h4, body .container .menu_francais section h4, body .container section .menu_francais h4, body .container .menu_des_sens section h4, body .container section .menu_des_sens h4 {
-  font-family: Shrikhand;
-}
-
 body .container .menu_du_gout h2, body .container .menu_enchante h2, body .container .menu_francais h2, body .container .menu_des_sens h2 {
   width: 60px;
   border: 4px solid #99e2d0;
+  font-family: Roboto;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -580,6 +577,10 @@ body .container .menu_du_gout .entrees .entree, body .container .menu_enchante .
   line-height: 53px;
 }
 
+body .container .menu_du_gout .entrees .entree h3, body .container .menu_enchante .entrees .entree h3, body .container .menu_francais .entrees .entree h3, body .container .menu_des_sens .entrees .entree h3, body .container .menu_du_gout .entrees .entree section h4, body .container section .menu_du_gout .entrees .entree h4, body .container .menu_enchante .entrees .entree section h4, body .container section .menu_enchante .entrees .entree h4, body .container .menu_francais .entrees .entree section h4, body .container section .menu_francais .entrees .entree h4, body .container .menu_des_sens .entrees .entree section h4, body .container section .menu_des_sens .entrees .entree h4, body .container .menu_du_gout .entrees .plat h3, body .container .menu_enchante .entrees .plat h3, body .container .menu_francais .entrees .plat h3, body .container .menu_des_sens .entrees .plat h3, body .container .menu_du_gout .entrees .plat section h4, body .container section .menu_du_gout .entrees .plat h4, body .container .menu_enchante .entrees .plat section h4, body .container section .menu_enchante .entrees .plat h4, body .container .menu_francais .entrees .plat section h4, body .container section .menu_francais .entrees .plat h4, body .container .menu_des_sens .entrees .plat section h4, body .container section .menu_des_sens .entrees .plat h4, body .container .menu_du_gout .entrees .dessert h3, body .container .menu_enchante .entrees .dessert h3, body .container .menu_francais .entrees .dessert h3, body .container .menu_des_sens .entrees .dessert h3, body .container .menu_du_gout .entrees .dessert section h4, body .container section .menu_du_gout .entrees .dessert h4, body .container .menu_enchante .entrees .dessert section h4, body .container section .menu_enchante .entrees .dessert h4, body .container .menu_francais .entrees .dessert section h4, body .container section .menu_francais .entrees .dessert h4, body .container .menu_des_sens .entrees .dessert section h4, body .container section .menu_des_sens .entrees .dessert h4, body .container .menu_du_gout .plats .entree h3, body .container .menu_enchante .plats .entree h3, body .container .menu_francais .plats .entree h3, body .container .menu_des_sens .plats .entree h3, body .container .menu_du_gout .plats .entree section h4, body .container section .menu_du_gout .plats .entree h4, body .container .menu_enchante .plats .entree section h4, body .container section .menu_enchante .plats .entree h4, body .container .menu_francais .plats .entree section h4, body .container section .menu_francais .plats .entree h4, body .container .menu_des_sens .plats .entree section h4, body .container section .menu_des_sens .plats .entree h4, body .container .menu_du_gout .plats .plat h3, body .container .menu_enchante .plats .plat h3, body .container .menu_francais .plats .plat h3, body .container .menu_des_sens .plats .plat h3, body .container .menu_du_gout .plats .plat section h4, body .container section .menu_du_gout .plats .plat h4, body .container .menu_enchante .plats .plat section h4, body .container section .menu_enchante .plats .plat h4, body .container .menu_francais .plats .plat section h4, body .container section .menu_francais .plats .plat h4, body .container .menu_des_sens .plats .plat section h4, body .container section .menu_des_sens .plats .plat h4, body .container .menu_du_gout .plats .dessert h3, body .container .menu_enchante .plats .dessert h3, body .container .menu_francais .plats .dessert h3, body .container .menu_des_sens .plats .dessert h3, body .container .menu_du_gout .plats .dessert section h4, body .container section .menu_du_gout .plats .dessert h4, body .container .menu_enchante .plats .dessert section h4, body .container section .menu_enchante .plats .dessert h4, body .container .menu_francais .plats .dessert section h4, body .container section .menu_francais .plats .dessert h4, body .container .menu_des_sens .plats .dessert section h4, body .container section .menu_des_sens .plats .dessert h4, body .container .menu_du_gout .desserts .entree h3, body .container .menu_enchante .desserts .entree h3, body .container .menu_francais .desserts .entree h3, body .container .menu_des_sens .desserts .entree h3, body .container .menu_du_gout .desserts .entree section h4, body .container section .menu_du_gout .desserts .entree h4, body .container .menu_enchante .desserts .entree section h4, body .container section .menu_enchante .desserts .entree h4, body .container .menu_francais .desserts .entree section h4, body .container section .menu_francais .desserts .entree h4, body .container .menu_des_sens .desserts .entree section h4, body .container section .menu_des_sens .desserts .entree h4, body .container .menu_du_gout .desserts .plat h3, body .container .menu_enchante .desserts .plat h3, body .container .menu_francais .desserts .plat h3, body .container .menu_des_sens .desserts .plat h3, body .container .menu_du_gout .desserts .plat section h4, body .container section .menu_du_gout .desserts .plat h4, body .container .menu_enchante .desserts .plat section h4, body .container section .menu_enchante .desserts .plat h4, body .container .menu_francais .desserts .plat section h4, body .container section .menu_francais .desserts .plat h4, body .container .menu_des_sens .desserts .plat section h4, body .container section .menu_des_sens .desserts .plat h4, body .container .menu_du_gout .desserts .dessert h3, body .container .menu_enchante .desserts .dessert h3, body .container .menu_francais .desserts .dessert h3, body .container .menu_des_sens .desserts .dessert h3, body .container .menu_du_gout .desserts .dessert section h4, body .container section .menu_du_gout .desserts .dessert h4, body .container .menu_enchante .desserts .dessert section h4, body .container section .menu_enchante .desserts .dessert h4, body .container .menu_francais .desserts .dessert section h4, body .container section .menu_francais .desserts .dessert h4, body .container .menu_des_sens .desserts .dessert section h4, body .container section .menu_des_sens .desserts .dessert h4 {
+  font-family: Roboto;
+}
+
 body .container .menu_du_gout .entrees .entree .titre_prix, body .container .menu_enchante .entrees .entree .titre_prix, body .container .menu_francais .entrees .entree .titre_prix, body .container .menu_des_sens .entrees .entree .titre_prix, body .container .menu_du_gout .entrees .plat .titre_prix, body .container .menu_enchante .entrees .plat .titre_prix, body .container .menu_francais .entrees .plat .titre_prix, body .container .menu_des_sens .entrees .plat .titre_prix, body .container .menu_du_gout .entrees .dessert .titre_prix, body .container .menu_enchante .entrees .dessert .titre_prix, body .container .menu_francais .entrees .dessert .titre_prix, body .container .menu_des_sens .entrees .dessert .titre_prix, body .container .menu_du_gout .plats .entree .titre_prix, body .container .menu_enchante .plats .entree .titre_prix, body .container .menu_francais .plats .entree .titre_prix, body .container .menu_des_sens .plats .entree .titre_prix, body .container .menu_du_gout .plats .plat .titre_prix, body .container .menu_enchante .plats .plat .titre_prix, body .container .menu_francais .plats .plat .titre_prix, body .container .menu_des_sens .plats .plat .titre_prix, body .container .menu_du_gout .plats .dessert .titre_prix, body .container .menu_enchante .plats .dessert .titre_prix, body .container .menu_francais .plats .dessert .titre_prix, body .container .menu_des_sens .plats .dessert .titre_prix, body .container .menu_du_gout .desserts .entree .titre_prix, body .container .menu_enchante .desserts .entree .titre_prix, body .container .menu_francais .desserts .entree .titre_prix, body .container .menu_des_sens .desserts .entree .titre_prix, body .container .menu_du_gout .desserts .plat .titre_prix, body .container .menu_enchante .desserts .plat .titre_prix, body .container .menu_francais .desserts .plat .titre_prix, body .container .menu_des_sens .desserts .plat .titre_prix, body .container .menu_du_gout .desserts .dessert .titre_prix, body .container .menu_enchante .desserts .dessert .titre_prix, body .container .menu_francais .desserts .dessert .titre_prix, body .container .menu_des_sens .desserts .dessert .titre_prix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,20 +595,34 @@ body .container .menu_du_gout .entrees .entree .titre_prix .prix, body .containe
   margin-left: auto;
 }
 
-body .container .menu_du_gout .entrees .entree i.fas.fa-check-circle, body .container .menu_enchante .entrees .entree i.fas.fa-check-circle, body .container .menu_francais .entrees .entree i.fas.fa-check-circle, body .container .menu_des_sens .entrees .entree i.fas.fa-check-circle, body .container .menu_du_gout .entrees .plat i.fas.fa-check-circle, body .container .menu_enchante .entrees .plat i.fas.fa-check-circle, body .container .menu_francais .entrees .plat i.fas.fa-check-circle, body .container .menu_des_sens .entrees .plat i.fas.fa-check-circle, body .container .menu_du_gout .entrees .dessert i.fas.fa-check-circle, body .container .menu_enchante .entrees .dessert i.fas.fa-check-circle, body .container .menu_francais .entrees .dessert i.fas.fa-check-circle, body .container .menu_des_sens .entrees .dessert i.fas.fa-check-circle, body .container .menu_du_gout .plats .entree i.fas.fa-check-circle, body .container .menu_enchante .plats .entree i.fas.fa-check-circle, body .container .menu_francais .plats .entree i.fas.fa-check-circle, body .container .menu_des_sens .plats .entree i.fas.fa-check-circle, body .container .menu_du_gout .plats .plat i.fas.fa-check-circle, body .container .menu_enchante .plats .plat i.fas.fa-check-circle, body .container .menu_francais .plats .plat i.fas.fa-check-circle, body .container .menu_des_sens .plats .plat i.fas.fa-check-circle, body .container .menu_du_gout .plats .dessert i.fas.fa-check-circle, body .container .menu_enchante .plats .dessert i.fas.fa-check-circle, body .container .menu_francais .plats .dessert i.fas.fa-check-circle, body .container .menu_des_sens .plats .dessert i.fas.fa-check-circle, body .container .menu_du_gout .desserts .entree i.fas.fa-check-circle, body .container .menu_enchante .desserts .entree i.fas.fa-check-circle, body .container .menu_francais .desserts .entree i.fas.fa-check-circle, body .container .menu_des_sens .desserts .entree i.fas.fa-check-circle, body .container .menu_du_gout .desserts .plat i.fas.fa-check-circle, body .container .menu_enchante .desserts .plat i.fas.fa-check-circle, body .container .menu_francais .desserts .plat i.fas.fa-check-circle, body .container .menu_des_sens .desserts .plat i.fas.fa-check-circle, body .container .menu_du_gout .desserts .dessert i.fas.fa-check-circle, body .container .menu_enchante .desserts .dessert i.fas.fa-check-circle, body .container .menu_francais .desserts .dessert i.fas.fa-check-circle, body .container .menu_des_sens .desserts .dessert i.fas.fa-check-circle {
+body .container .menu_du_gout .entrees .entree .check_circle, body .container .menu_enchante .entrees .entree .check_circle, body .container .menu_francais .entrees .entree .check_circle, body .container .menu_des_sens .entrees .entree .check_circle, body .container .menu_du_gout .entrees .plat .check_circle, body .container .menu_enchante .entrees .plat .check_circle, body .container .menu_francais .entrees .plat .check_circle, body .container .menu_des_sens .entrees .plat .check_circle, body .container .menu_du_gout .entrees .dessert .check_circle, body .container .menu_enchante .entrees .dessert .check_circle, body .container .menu_francais .entrees .dessert .check_circle, body .container .menu_des_sens .entrees .dessert .check_circle, body .container .menu_du_gout .plats .entree .check_circle, body .container .menu_enchante .plats .entree .check_circle, body .container .menu_francais .plats .entree .check_circle, body .container .menu_des_sens .plats .entree .check_circle, body .container .menu_du_gout .plats .plat .check_circle, body .container .menu_enchante .plats .plat .check_circle, body .container .menu_francais .plats .plat .check_circle, body .container .menu_des_sens .plats .plat .check_circle, body .container .menu_du_gout .plats .dessert .check_circle, body .container .menu_enchante .plats .dessert .check_circle, body .container .menu_francais .plats .dessert .check_circle, body .container .menu_des_sens .plats .dessert .check_circle, body .container .menu_du_gout .desserts .entree .check_circle, body .container .menu_enchante .desserts .entree .check_circle, body .container .menu_francais .desserts .entree .check_circle, body .container .menu_des_sens .desserts .entree .check_circle, body .container .menu_du_gout .desserts .plat .check_circle, body .container .menu_enchante .desserts .plat .check_circle, body .container .menu_francais .desserts .plat .check_circle, body .container .menu_des_sens .desserts .plat .check_circle, body .container .menu_du_gout .desserts .dessert .check_circle, body .container .menu_enchante .desserts .dessert .check_circle, body .container .menu_francais .desserts .dessert .check_circle, body .container .menu_des_sens .desserts .dessert .check_circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .container .menu_du_gout .entrees .entree .check_circle i.fas.fa-check-circle, body .container .menu_enchante .entrees .entree .check_circle i.fas.fa-check-circle, body .container .menu_francais .entrees .entree .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .entrees .entree .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .entrees .plat .check_circle i.fas.fa-check-circle, body .container .menu_enchante .entrees .plat .check_circle i.fas.fa-check-circle, body .container .menu_francais .entrees .plat .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .entrees .plat .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .entrees .dessert .check_circle i.fas.fa-check-circle, body .container .menu_enchante .entrees .dessert .check_circle i.fas.fa-check-circle, body .container .menu_francais .entrees .dessert .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .entrees .dessert .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .plats .entree .check_circle i.fas.fa-check-circle, body .container .menu_enchante .plats .entree .check_circle i.fas.fa-check-circle, body .container .menu_francais .plats .entree .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .plats .entree .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .plats .plat .check_circle i.fas.fa-check-circle, body .container .menu_enchante .plats .plat .check_circle i.fas.fa-check-circle, body .container .menu_francais .plats .plat .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .plats .plat .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .plats .dessert .check_circle i.fas.fa-check-circle, body .container .menu_enchante .plats .dessert .check_circle i.fas.fa-check-circle, body .container .menu_francais .plats .dessert .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .plats .dessert .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .desserts .entree .check_circle i.fas.fa-check-circle, body .container .menu_enchante .desserts .entree .check_circle i.fas.fa-check-circle, body .container .menu_francais .desserts .entree .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .desserts .entree .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .desserts .plat .check_circle i.fas.fa-check-circle, body .container .menu_enchante .desserts .plat .check_circle i.fas.fa-check-circle, body .container .menu_francais .desserts .plat .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .desserts .plat .check_circle i.fas.fa-check-circle, body .container .menu_du_gout .desserts .dessert .check_circle i.fas.fa-check-circle, body .container .menu_enchante .desserts .dessert .check_circle i.fas.fa-check-circle, body .container .menu_francais .desserts .dessert .check_circle i.fas.fa-check-circle, body .container .menu_des_sens .desserts .dessert .check_circle i.fas.fa-check-circle {
   position: absolute;
+  overflow: hidden;
   font-size: 0;
-}
-
-body .container .menu_du_gout:active i.fas.fa-check-circle, body .container .menu_enchante:active i.fas.fa-check-circle, body .container .menu_francais:active i.fas.fa-check-circle, body .container .menu_des_sens:active i.fas.fa-check-circle {
   font-weight: lighter;
-  top: 60%;
-  right: 35px;
-  animation: fade-2 0.5s ease-in-out;
-  -webkit-animation: fade-2 0.1ms both;
 }
 
-body .container .menu_du_gout:active .prix, body .container .menu_enchante:active .prix, body .container .menu_francais:active .prix, body .container .menu_des_sens:active .prix {
+body .container .menu_du_gout:active .titre_prix .titre, body .container .menu_enchante:active .titre_prix .titre, body .container .menu_francais:active .titre_prix .titre, body .container .menu_des_sens:active .titre_prix .titre {
+  animation: clip 0.1ms both;
+  -webkit-animation: clip 0.1ms both;
+  text-overflow: ellipsis;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body .container .menu_du_gout:active .titre_prix .prix, body .container .menu_enchante:active .titre_prix .prix, body .container .menu_francais:active .titre_prix .prix, body .container .menu_des_sens:active .titre_prix .prix {
   position: relative;
   margin-lef: 40%;
   animation: slide 0.1ms both;
@@ -618,10 +633,17 @@ body .container .menu_du_gout:active .prix, body .container .menu_enchante:activ
   -webkit-animation: slide 0.1ms both;
 }
 
-body .container .menu_du_gout:active .titre, body .container .menu_enchante:active .titre, body .container .menu_francais:active .titre, body .container .menu_des_sens:active .titre {
-  animation: clip 0.1ms both;
-  -webkit-animation: clip 0.1ms both;
-  text-overflow: ellipsis;
+body .container .menu_du_gout:active i.fas.fa-check-circle, body .container .menu_enchante:active i.fas.fa-check-circle, body .container .menu_francais:active i.fas.fa-check-circle, body .container .menu_des_sens:active i.fas.fa-check-circle {
+  position: absolute;
+  background-color: #99e2d0;
+  padding: 24px;
+  line-height: 56px;
+  border-top-right-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  font-weight: lighter;
+  margin-top: -103px;
+  animation: fade-2 0.1ms both;
+  -webkit-animation: fade-2 0.1ms both;
 }
 
 @-webkit-keyframes fade-1 {
@@ -680,23 +702,16 @@ body .container .menu_du_gout .desserts, body .container .menu_enchante .dessert
 @-webkit-keyframes fade-2 {
   0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0) scale(0);
-    -webkit-transform: translate3d(100%, 0, 0) scale(0);
-    -moz-transform: translate3d(100%, 0, 0) scale(0);
-    -ms-transform: translate3d(100%, 0, 0) scale(0);
-    -o-transform: translate3d(100%, 0, 0) scale(0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
   }
   100% {
     opacity: 1;
-    transform: none;
-    background-color: #99e2d0;
-    padding: 22px;
-    width: 10%;
-    font-weight: lighter;
     font-size: 41px;
-    line-height: 52px;
-    border-top-right-radius: 2vh;
-    border-bottom-right-radius: 2vh;
+    transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -707,23 +722,16 @@ body .container .menu_du_gout .desserts, body .container .menu_enchante .dessert
 @keyframes fade-2 {
   0% {
     opacity: 0;
-    transform: translate3d(100%, 0, 0) scale(0);
-    -webkit-transform: translate3d(100%, 0, 0) scale(0);
-    -moz-transform: translate3d(100%, 0, 0) scale(0);
-    -ms-transform: translate3d(100%, 0, 0) scale(0);
-    -o-transform: translate3d(100%, 0, 0) scale(0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
   }
   100% {
     opacity: 1;
-    transform: none;
-    background-color: #99e2d0;
-    padding: 22px;
-    width: 10%;
-    font-weight: lighter;
     font-size: 41px;
-    line-height: 52px;
-    border-top-right-radius: 2vh;
-    border-bottom-right-radius: 2vh;
+    transform: none;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
