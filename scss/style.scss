@@ -99,7 +99,6 @@ body{
         margin:auto;
         width: 90%;
         max-width: 1200px;
-
         header{
             background-color: white;
             padding:20px;
@@ -127,6 +126,7 @@ body{
                 margin-top: 8px;
                 margin-bottom:50px;
                 padding:10px;
+                border: 5px inset #e0e0e0;
                 
                 i.fas.fa-map-marker-alt{
                     padding-right: 15px;
@@ -198,6 +198,7 @@ body{
                 flex-direction: column;
                 margin-bottom: 50px;
                 font-weight: bold;
+                grid-gap:15px;
                 @media screen and (min-width:1200px){
                     display: flex;
                     justify-content: space-between;
@@ -243,12 +244,16 @@ body{
             flex-direction: column;
             background-color:#eee;
             box-sizing: border-box;
+
             .cards{
                 @media screen and (min-width:1200px){
-                    display: flex;
-                    justify-content: space-between;
-                    grid-gap:20px;
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    grid-template-rows: 1fr auto;
+                    grid-gap:15px;
+                    object-fit: cover;
                 }
+
                 .h2{
                     padding: 30px 0 0 10px;
                 }
@@ -293,6 +298,8 @@ body{
                     @media screen and (min-width:1200px){
                         border-top-left-radius: 15px;
                         border-top-right-radius: 15px;
+                        object-fit: cover;
+                        height: 38vh;
                         width: 100%;
                     }
                 }
@@ -436,7 +443,8 @@ body{
                             background-color: white;
                             margin-top:-11%;
                             @media screen and (min-width:1200px){
-                                font-size: 4vw;
+                                font-size: 3vw;
+                                padding-top: 9%;
                             }
                             &:hover{
                                 transition: 2s ease-in-out;
@@ -475,7 +483,8 @@ body{
                             width: 80%;
                             box-sizing: border-box;
                             @media screen and (min-width:1200px){
-                                font-size: 4vw;
+                                font-size: 2em;
+                                margin-top:-2.6%;
                             }
             
                         }
@@ -497,11 +506,12 @@ body{
                 text-transform: uppercase;
                 text-shadow: 1px 1px 1px;
                 @media screen and (min-width:1200px){
-                    margin-top: 200px;
+                    margin-top: 50px;
                     margin-bottom: 10px;
                     font-size: 50px;
                     font-weight: 900;
                     display: inline-table;
+                    width: 100%;
                 }
             }
 
@@ -517,7 +527,8 @@ body{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    width: 90%;
+                    width: 100%;
+                    text-align: center;
                 }
 
                 .entree, .plat, .dessert {
@@ -529,7 +540,11 @@ body{
                     margin-top:15px;
                     cursor: pointer;
                     line-height: 53px;
-
+                    @media screen and (min-width:1200px){
+                        width: 25%;
+                        text-align:start;
+                    }
+                    
                     h3{
                         font-family: Roboto;
                     }
