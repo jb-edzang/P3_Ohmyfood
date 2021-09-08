@@ -59,9 +59,9 @@ body{
     .loader-spinner{
         position: absolute;
         border-radius: 100%;
-        border-top: 5px solid blue;
         border-top-color: rgba(231, 76, 60,1.0);
         left: 150px;
+        margin:auto;
         -webkit-border-radius: 100%;
         animation:spinner 3s linear 0.5ms both;
         -webkit-animation:spinner 3s linear 0.5ms both;
@@ -279,10 +279,9 @@ body{
             
                 h4{
                     @extend h3 ; 
-                    font-weight: lighter;
                     font-size: 19px;
                     margin-top:-15px;
-                    color: #333;
+                    font-family: roboto;
                 }
     
                 .img{
@@ -303,7 +302,7 @@ body{
                         width: 100%;
                     }
                 }
-    
+
                 .legende_card{
                     display: flex;
                     i.fas.fa-heart{
@@ -334,11 +333,6 @@ body{
                     border-radius: 3px;
                     font-size: 23px;
                 }
-                // @include desktop(){
-                //     display: flex;
-                //     flex-direction: row;
-                //     grid-template-columns: repeat(4 1fr);
-                // }
             }
             
 
@@ -443,8 +437,8 @@ body{
                             background-color: white;
                             margin-top:-11%;
                             @media screen and (min-width:1200px){
-                                font-size: 3vw;
-                                padding-top: 9%;
+                                font-size: 2em;
+                                padding-top: 5.2%;
                             }
                             &:hover{
                                 transition: 2s ease-in-out;
@@ -486,7 +480,6 @@ body{
                                 font-size: 2em;
                                 margin-top:-2.6%;
                             }
-            
                         }
                     }
                 }
@@ -523,6 +516,7 @@ body{
                 animation-iteration-count: 1;
                 animation-direction: normal;
                 animation-fill-mode: none;
+
                 @media screen and (min-width:1200px){
                     display: flex;
                     flex-wrap: wrap;
@@ -555,55 +549,57 @@ body{
                         font-style: normal;
                         font-size: 15px;
                         margin-top:-40px;
+                        .titre{
+                            text-overflow: ellipsis;
+                            // overflow: hidden;
+                            // width: 100%;
+                            // margin-right: 40%;
+                        }
                         .prix{
                             margin-left: auto;
                         }
                     }
-                    .check_circle{
-                        position: relative;
-                        display: flex;
-                        justify-content: flex-end;
+                    &:active{
+                        .titre_prix{
+                            .titre{
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                margin-right: 40%;
+                                box-sizing: border-box;
+                            }
+                            .prix{
+                                position: relative;
+                                margin-lef:40%;
+                                animation: slide 0.1ms both;
+                                -webkit-transition: slide 0.1ms both;
+                                -moz-transition: slide 0.1ms both;
+                                -ms-transition: slide 0.1ms both;
+                                -o-transition: slide 0.1ms both;
+                                -webkit-animation: slide 0.1ms both;
+                            }
+                        }
                         i.fas.fa-check-circle{
-                            // position: absolute;
-                            // overflow: hidden;
-                            font-size: 0;
+                            position:absolute;
+                            background-color: $Tertiaire;
+                            padding:24px;
+                            line-height: 56px;
+                            border-top-right-radius: 2vh;
+                            border-bottom-right-radius: 2vh;
                             font-weight: lighter;
-                        } 
+                            margin-top: -103px;
+                            animation:fade-2 0.1ms both;
+                            -webkit-animation:fade-2 0.1ms both;
+                        }
                     }
                 }
-            }
-            &:active{
-                .titre_prix{
-                    .titre{
-                        animation: clip 0.1ms both;
-                        -webkit-animation: clip 0.1ms both;
-                        text-overflow: ellipsis;
-                        flex-wrap: nowrap;
-                        overflow: hidden;
-                        white-space: nowrap;
-                    }
-                    .prix{
+                .check_circle{
+                    display: flex;
+                    justify-content: flex-end;
+                    i.fas.fa-check-circle{
                         position: relative;
-                        margin-lef:40%;
-                        animation: slide 0.1ms both;
-                        -webkit-transition: slide 0.1ms both;
-                        -moz-transition: slide 0.1ms both;
-                        -ms-transition: slide 0.1ms both;
-                        -o-transition: slide 0.1ms both;
-                        -webkit-animation: slide 0.1ms both;
-                    }
-                }
-                i.fas.fa-check-circle{
-                    position:absolute;
-                    background-color: $Tertiaire;
-                    padding:24px;
-                    line-height: 56px;
-                    border-top-right-radius: 2vh;
-                    border-bottom-right-radius: 2vh;
-                    font-weight: lighter;
-                    margin-top: -103px;
-                    animation:fade-2 0.1ms both;
-                    -webkit-animation:fade-2 0.1ms both;
+                        font-size: 0;
+                        font-weight: lighter;
+                    } 
                 }
             }
             @keyframes fade-1 {
