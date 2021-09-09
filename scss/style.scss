@@ -416,7 +416,8 @@ body{
                 background-color: white;
 
                 .bg_legende{
-                    width: 108%;
+                    width: 110%;
+                    height: 10em;
                     .legende {
                         display: flex;
                         width: 93%;
@@ -437,8 +438,9 @@ body{
                             background-color: white;
                             margin-top:-11%;
                             @media screen and (min-width:1200px){
-                                font-size: 2em;
-                                padding-top: 5.2%;
+                                font-size: 1.9em;
+                                padding-top: 1em;
+                                width: 18%;
                             }
                             &:hover{
                                 transition: 2s ease-in-out;
@@ -547,25 +549,36 @@ body{
                         display: flex;
                         width: 93%;
                         font-style: normal;
-                        font-size: 15px;
+                        font-size: 14px;
                         margin-top:-40px;
+                        @media screen and (min-width:1200px) {
+                            font-size: 13px;
+                        }
                         .titre{
-                            text-overflow: ellipsis;
-                            // overflow: hidden;
-                            // width: 100%;
-                            // margin-right: 40%;
+                            position: relative;
+                            @if (margin-right:93%){
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                box-sizing: border-box;
+                            }
                         }
                         .prix{
                             margin-left: auto;
                         }
                     }
-                    &:active{
+                    &:hover{
                         .titre_prix{
                             .titre{
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                margin-right: 40%;
-                                box-sizing: border-box;
+                                position: absolute;
+                                animation: ellipsis 0.1ms both;
+                                -webkit-animation: ellipsis 0.1ms both;
+                                @if (margin-right:93%){
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    box-sizing: border-box;
+                                }
                             }
                             .prix{
                                 position: relative;
@@ -578,14 +591,15 @@ body{
                                 -webkit-animation: slide 0.1ms both;
                             }
                         }
-                        i.fas.fa-check-circle{
+                        i.far.fa-check-circle{
                             position:absolute;
                             background-color: $Tertiaire;
+                            color: white;
+                            font-weight: bold;
                             padding:24px;
                             line-height: 56px;
                             border-top-right-radius: 2vh;
                             border-bottom-right-radius: 2vh;
-                            font-weight: lighter;
                             margin-top: -103px;
                             animation:fade-2 0.1ms both;
                             -webkit-animation:fade-2 0.1ms both;
@@ -595,13 +609,14 @@ body{
                 .check_circle{
                     display: flex;
                     justify-content: flex-end;
-                    i.fas.fa-check-circle{
+                    i.far.fa-check-circle{
                         position: relative;
                         font-size: 0;
                         font-weight: lighter;
                     } 
                 }
             }
+            
             @keyframes fade-1 {
                 0%{
                     opacity: 0;
@@ -620,6 +635,7 @@ body{
                     -o-transform: 0;
                 }
             }
+
             .entrees{
                 animation-delay:0.1ms;
             }
@@ -642,6 +658,26 @@ body{
                 100% {
                     opacity: 1;
                     font-size: 41px;
+                    transform: none;
+                    -webkit-transform: none;
+                    -moz-transform: none;
+                    -ms-transform: none;
+                    -o-transform: none;
+                }                   
+            }
+            @keyframes ellipsis {
+                0% {
+                    opacity: 0;
+                    text-overflow: ellipsis;
+                    transform: translate3d(-100%, 0, 0);
+                    -webkit-transform: translate3d(-100%, 0, 0);
+                    -moz-transform: translate3d(-100%, 0, 0);
+                    -ms-transform: translate3d(-100%, 0, 0);
+                    -o-transform: translate3d(-100%, 0, 0);
+                }
+                100% {
+                    opacity: 1;
+                    font-size: 14px;
                     transform: none;
                     -webkit-transform: none;
                     -moz-transform: none;
