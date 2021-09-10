@@ -1,4 +1,32 @@
 @font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Circular-Loom';
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Circular-Loom';
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Circular-Loom';
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-family: 'Circular-Loom';
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2") format("woff2");
+}
+
+@font-face {
   font-family: shrikhand;
   src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 }
@@ -21,6 +49,13 @@ body .loader-spinner {
   height: 350px;
   width: 350px;
   overflow: hidden;
+  margin-left: 18%;
+}
+
+@media screen and (min-width: 1200px) {
+  body .loader-spinner {
+    margin-left: 35%;
+  }
 }
 
 body .loader-spinner {
@@ -28,7 +63,6 @@ body .loader-spinner {
   border-radius: 100%;
   border-top-color: #e74c3c;
   left: 150px;
-  margin: auto;
   -webkit-border-radius: 100%;
   animation: spinner 3s linear 0.5ms both;
   -webkit-animation: spinner 3s linear 0.5ms both;
@@ -248,8 +282,14 @@ body .container aside .offre a {
   padding: 12px 3px;
   border: 1px solid #f2f2f2;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 25px;
   border-bottom-color: #dad0d0;
+}
+
+@media screen and (min-width: 1200px) {
+  body .container aside .offre a {
+    padding: 10px;
+  }
 }
 
 body .container aside .offre .deguster {
@@ -311,6 +351,7 @@ body .container section .cards h4 {
   font-size: 19px;
   margin-top: -15px;
   font-family: roboto;
+  font-size: 22px;
 }
 
 body .container section .cards .img, body .container section .cards .img_section {
@@ -458,7 +499,7 @@ body .container .menu_du_gout, body .container .menu_enchante, body .container .
 
 body .container .menu_du_gout .img_main, body .container .menu_enchante .img_main, body .container .menu_francais .img_main, body .container .menu_des_sens .img_main {
   width: 100%;
-  max-height: 60vw;
+  height: 70vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -489,7 +530,7 @@ body .container .menu_du_gout .heading .bg_legende .legende, body .container .me
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart {
-  width: 20%;
+  width: 18%;
   display: inherit;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -514,8 +555,8 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
 body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart:hover {
   transition: 2s ease-in-out;
   width: 20%;
-  animation: coeur 8s both;
-  -webkit-animation: coeur 1s both;
+  animation: coeur 2s both;
+  -webkit-animation: coeur 2s both;
   -webkit-transition: 2s ease-in-out;
   -moz-transition: 2s ease-in-out;
   -ms-transition: 2s ease-in-out;
@@ -524,27 +565,21 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart:hover
 
 @-webkit-keyframes coeur {
   0% {
-    background-position: 0% 0%;
+    color: #ff79da;
   }
   100% {
-    background-position: 100% 100%;
     font-weight: bold;
     color: #9356dc;
-    -webkit-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;
   }
 }
 
 @keyframes coeur {
   0% {
-    background-position: 0% 0%;
+    color: #ff79da;
   }
   100% {
-    background-position: 100% 100%;
     font-weight: bold;
     color: #9356dc;
-    -webkit-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;
   }
 }
 
@@ -585,7 +620,7 @@ body .container .menu_du_gout h2, body .container .menu_enchante h2, body .conta
   padding-bottom: 6px;
   margin-top: 50px;
   color: #888;
-  font-weight: 400;
+  font-weight: lighter;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px;
 }
@@ -594,7 +629,7 @@ body .container .menu_du_gout h2, body .container .menu_enchante h2, body .conta
   body .container .menu_du_gout h2, body .container .menu_enchante h2, body .container .menu_francais h2, body .container .menu_des_sens h2 {
     margin-top: 50px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 900;
     display: inline-table;
     width: 100%;
@@ -641,7 +676,7 @@ body .container .menu_du_gout .entrees .entree, body .container .menu_enchante .
   padding: 0 4px 0 10px;
   margin-top: 15px;
   cursor: pointer;
-  line-height: 53px;
+  line-height: 49px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -673,11 +708,7 @@ body .container .menu_du_gout .entrees .entree .titre_prix, body .container .men
 
 body .container .menu_du_gout .entrees .entree .titre_prix .titre, body .container .menu_enchante .entrees .entree .titre_prix .titre, body .container .menu_francais .entrees .entree .titre_prix .titre, body .container .menu_des_sens .entrees .entree .titre_prix .titre, body .container .menu_du_gout .entrees .plat .titre_prix .titre, body .container .menu_enchante .entrees .plat .titre_prix .titre, body .container .menu_francais .entrees .plat .titre_prix .titre, body .container .menu_des_sens .entrees .plat .titre_prix .titre, body .container .menu_du_gout .entrees .dessert .titre_prix .titre, body .container .menu_enchante .entrees .dessert .titre_prix .titre, body .container .menu_francais .entrees .dessert .titre_prix .titre, body .container .menu_des_sens .entrees .dessert .titre_prix .titre, body .container .menu_du_gout .plats .entree .titre_prix .titre, body .container .menu_enchante .plats .entree .titre_prix .titre, body .container .menu_francais .plats .entree .titre_prix .titre, body .container .menu_des_sens .plats .entree .titre_prix .titre, body .container .menu_du_gout .plats .plat .titre_prix .titre, body .container .menu_enchante .plats .plat .titre_prix .titre, body .container .menu_francais .plats .plat .titre_prix .titre, body .container .menu_des_sens .plats .plat .titre_prix .titre, body .container .menu_du_gout .plats .dessert .titre_prix .titre, body .container .menu_enchante .plats .dessert .titre_prix .titre, body .container .menu_francais .plats .dessert .titre_prix .titre, body .container .menu_des_sens .plats .dessert .titre_prix .titre, body .container .menu_du_gout .desserts .entree .titre_prix .titre, body .container .menu_enchante .desserts .entree .titre_prix .titre, body .container .menu_francais .desserts .entree .titre_prix .titre, body .container .menu_des_sens .desserts .entree .titre_prix .titre, body .container .menu_du_gout .desserts .plat .titre_prix .titre, body .container .menu_enchante .desserts .plat .titre_prix .titre, body .container .menu_francais .desserts .plat .titre_prix .titre, body .container .menu_des_sens .desserts .plat .titre_prix .titre, body .container .menu_du_gout .desserts .dessert .titre_prix .titre, body .container .menu_enchante .desserts .dessert .titre_prix .titre, body .container .menu_francais .desserts .dessert .titre_prix .titre, body .container .menu_des_sens .desserts .dessert .titre_prix .titre {
   position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body .container .menu_du_gout .entrees .entree .titre_prix .prix, body .container .menu_enchante .entrees .entree .titre_prix .prix, body .container .menu_francais .entrees .entree .titre_prix .prix, body .container .menu_des_sens .entrees .entree .titre_prix .prix, body .container .menu_du_gout .entrees .plat .titre_prix .prix, body .container .menu_enchante .entrees .plat .titre_prix .prix, body .container .menu_francais .entrees .plat .titre_prix .prix, body .container .menu_des_sens .entrees .plat .titre_prix .prix, body .container .menu_du_gout .entrees .dessert .titre_prix .prix, body .container .menu_enchante .entrees .dessert .titre_prix .prix, body .container .menu_francais .entrees .dessert .titre_prix .prix, body .container .menu_des_sens .entrees .dessert .titre_prix .prix, body .container .menu_du_gout .plats .entree .titre_prix .prix, body .container .menu_enchante .plats .entree .titre_prix .prix, body .container .menu_francais .plats .entree .titre_prix .prix, body .container .menu_des_sens .plats .entree .titre_prix .prix, body .container .menu_du_gout .plats .plat .titre_prix .prix, body .container .menu_enchante .plats .plat .titre_prix .prix, body .container .menu_francais .plats .plat .titre_prix .prix, body .container .menu_des_sens .plats .plat .titre_prix .prix, body .container .menu_du_gout .plats .dessert .titre_prix .prix, body .container .menu_enchante .plats .dessert .titre_prix .prix, body .container .menu_francais .plats .dessert .titre_prix .prix, body .container .menu_des_sens .plats .dessert .titre_prix .prix, body .container .menu_du_gout .desserts .entree .titre_prix .prix, body .container .menu_enchante .desserts .entree .titre_prix .prix, body .container .menu_francais .desserts .entree .titre_prix .prix, body .container .menu_des_sens .desserts .entree .titre_prix .prix, body .container .menu_du_gout .desserts .plat .titre_prix .prix, body .container .menu_enchante .desserts .plat .titre_prix .prix, body .container .menu_francais .desserts .plat .titre_prix .prix, body .container .menu_des_sens .desserts .plat .titre_prix .prix, body .container .menu_du_gout .desserts .dessert .titre_prix .prix, body .container .menu_enchante .desserts .dessert .titre_prix .prix, body .container .menu_francais .desserts .dessert .titre_prix .prix, body .container .menu_des_sens .desserts .dessert .titre_prix .prix {
@@ -693,11 +724,12 @@ body .container .menu_du_gout .entrees .entree:hover .titre_prix .titre, body .c
   white-space: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100px;
 }
 
 body .container .menu_du_gout .entrees .entree:hover .titre_prix .prix, body .container .menu_enchante .entrees .entree:hover .titre_prix .prix, body .container .menu_francais .entrees .entree:hover .titre_prix .prix, body .container .menu_des_sens .entrees .entree:hover .titre_prix .prix, body .container .menu_du_gout .entrees .plat:hover .titre_prix .prix, body .container .menu_enchante .entrees .plat:hover .titre_prix .prix, body .container .menu_francais .entrees .plat:hover .titre_prix .prix, body .container .menu_des_sens .entrees .plat:hover .titre_prix .prix, body .container .menu_du_gout .entrees .dessert:hover .titre_prix .prix, body .container .menu_enchante .entrees .dessert:hover .titre_prix .prix, body .container .menu_francais .entrees .dessert:hover .titre_prix .prix, body .container .menu_des_sens .entrees .dessert:hover .titre_prix .prix, body .container .menu_du_gout .plats .entree:hover .titre_prix .prix, body .container .menu_enchante .plats .entree:hover .titre_prix .prix, body .container .menu_francais .plats .entree:hover .titre_prix .prix, body .container .menu_des_sens .plats .entree:hover .titre_prix .prix, body .container .menu_du_gout .plats .plat:hover .titre_prix .prix, body .container .menu_enchante .plats .plat:hover .titre_prix .prix, body .container .menu_francais .plats .plat:hover .titre_prix .prix, body .container .menu_des_sens .plats .plat:hover .titre_prix .prix, body .container .menu_du_gout .plats .dessert:hover .titre_prix .prix, body .container .menu_enchante .plats .dessert:hover .titre_prix .prix, body .container .menu_francais .plats .dessert:hover .titre_prix .prix, body .container .menu_des_sens .plats .dessert:hover .titre_prix .prix, body .container .menu_du_gout .desserts .entree:hover .titre_prix .prix, body .container .menu_enchante .desserts .entree:hover .titre_prix .prix, body .container .menu_francais .desserts .entree:hover .titre_prix .prix, body .container .menu_des_sens .desserts .entree:hover .titre_prix .prix, body .container .menu_du_gout .desserts .plat:hover .titre_prix .prix, body .container .menu_enchante .desserts .plat:hover .titre_prix .prix, body .container .menu_francais .desserts .plat:hover .titre_prix .prix, body .container .menu_des_sens .desserts .plat:hover .titre_prix .prix, body .container .menu_du_gout .desserts .dessert:hover .titre_prix .prix, body .container .menu_enchante .desserts .dessert:hover .titre_prix .prix, body .container .menu_francais .desserts .dessert:hover .titre_prix .prix, body .container .menu_des_sens .desserts .dessert:hover .titre_prix .prix {
   position: relative;
-  margin-lef: 40%;
+  margin-left: 85%;
   animation: slide 0.1ms both;
   -webkit-transition: slide 0.1ms both;
   -moz-transition: slide 0.1ms both;
@@ -711,13 +743,14 @@ body .container .menu_du_gout .entrees .entree:hover i.far.fa-check-circle, body
   background-color: #99e2d0;
   color: white;
   font-weight: bold;
-  padding: 24px;
-  line-height: 56px;
-  border-top-right-radius: 2vh;
-  border-bottom-right-radius: 2vh;
-  margin-top: -103px;
-  animation: fade-2 0.1ms both;
-  -webkit-animation: fade-2 0.1ms both;
+  padding: 19px;
+  line-height: 60px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-top: -97px;
+  margin-right: -6px;
+  animation: fade-2 0.2s both;
+  -webkit-animation: fade-2 0.2s both;
 }
 
 body .container .menu_du_gout .entrees .check_circle, body .container .menu_enchante .entrees .check_circle, body .container .menu_francais .entrees .check_circle, body .container .menu_des_sens .entrees .check_circle, body .container .menu_du_gout .plats .check_circle, body .container .menu_enchante .plats .check_circle, body .container .menu_francais .plats .check_circle, body .container .menu_des_sens .plats .check_circle, body .container .menu_du_gout .desserts .check_circle, body .container .menu_enchante .desserts .check_circle, body .container .menu_francais .desserts .check_circle, body .container .menu_des_sens .desserts .check_circle {
@@ -799,7 +832,7 @@ body .container .menu_du_gout .desserts, body .container .menu_enchante .dessert
   }
   100% {
     opacity: 1;
-    font-size: 41px;
+    font-size: 40px;
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
@@ -819,7 +852,7 @@ body .container .menu_du_gout .desserts, body .container .menu_enchante .dessert
   }
   100% {
     opacity: 1;
-    font-size: 41px;
+    font-size: 40px;
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;

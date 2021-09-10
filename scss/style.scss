@@ -1,4 +1,32 @@
 @font-face {
+    font-weight: 400;
+    font-style:  normal;
+    font-family: 'Circular-Loom';
+    src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+    font-weight: 500;
+    font-style:  normal;
+    font-family: 'Circular-Loom';
+    src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+    font-weight: 700;
+    font-style:  normal;
+    font-family: 'Circular-Loom';
+    src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+font-weight: 900;
+font-style:  normal;
+font-family: 'Circular-Loom';
+src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}
+
+@font-face {
     font-family: shrikhand;
     src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 }
@@ -54,6 +82,10 @@ body{
         height: 350px;
         width: 350px;
         overflow: hidden;
+        margin-left: 18%;
+        @media screen and (min-width:1200px) {
+            margin-left: 35%;
+        }
     }
     
     .loader-spinner{
@@ -61,7 +93,6 @@ body{
         border-radius: 100%;
         border-top-color: rgba(231, 76, 60,1.0);
         left: 150px;
-        margin:auto;
         -webkit-border-radius: 100%;
         animation:spinner 3s linear 0.5ms both;
         -webkit-animation:spinner 3s linear 0.5ms both;
@@ -230,9 +261,13 @@ body{
                     padding: 12px 3px;
                     border: 1px solid #f2f2f2;
                     background-color: $background-color;
-                    border-radius: 20px;
+                    border-radius: 25px;
                     border-bottom-color:#dad0d0;
+                    @media screen and(min-width:1200px){
+                        padding: 10px;
+                    }
                 }
+
                 .deguster{
                     background: linear-gradient(90deg, rgba(231,222,240,1) 98%, rgba(228,205,255,0.9977728285077951) 100%);
                 }
@@ -282,6 +317,7 @@ body{
                     font-size: 19px;
                     margin-top:-15px;
                     font-family: roboto;
+                    font-size: 22px;
                 }
     
                 .img{
@@ -407,7 +443,7 @@ body{
             
             .img_main{
                 width: 100%;
-                max-height: 60vw;
+                height: 70vw;
                 object-fit: cover;
             }
 
@@ -427,7 +463,7 @@ body{
                         height: 82px;
                         box-sizing: border-box;
                         i.fas.fa-heart{
-                            width: 20%;
+                            width: 18%;
                             display: inherit;
                             justify-content: center;
                             padding-top: 10%;
@@ -445,8 +481,8 @@ body{
                             &:hover{
                                 transition: 2s ease-in-out;
                                 width: 20%;
-                                animation: coeur 8s both;
-                                -webkit-animation: coeur 1s both                            ;
+                                animation: coeur 2s both;
+                                -webkit-animation: coeur 2s both;
                                 -webkit-transition: 2s ease-in-out;
                                 -moz-transition: 2s ease-in-out;
                                 -ms-transition: 2s ease-in-out;
@@ -454,13 +490,12 @@ body{
                             }
                             @keyframes coeur {
                                 0%{
-                                    background-position: 0% 0%;
+                                    color:$Secondaire;
                                 }
                                 100%{
-                                    background-position: 100% 100%;
+                                    // background-position: -100% -100%;
                                     font-weight: bold;
                                     color: rgb(147,86,220);
-                                    transition: 2s ease-in-out;
                                 }
                             }
                         }
@@ -497,13 +532,13 @@ body{
                 padding-bottom:6px;
                 margin-top:50px;
                 color:#888;
-                font-weight: 400;
+                font-weight: lighter;
                 text-transform: uppercase;
                 text-shadow: 1px 1px 1px;
                 @media screen and (min-width:1200px){
                     margin-top: 50px;
                     margin-bottom: 10px;
-                    font-size: 50px;
+                    font-size: 25px;
                     font-weight: 900;
                     display: inline-table;
                     width: 100%;
@@ -535,7 +570,7 @@ body{
                     padding:0 4px 0 10px;
                     margin-top:15px;
                     cursor: pointer;
-                    line-height: 53px;
+                    line-height: 49px;
                     @media screen and (min-width:1200px){
                         width: 25%;
                         text-align:start;
@@ -556,12 +591,7 @@ body{
                         }
                         .titre{
                             position: relative;
-                            @if (margin-right:93%){
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                white-space: nowrap;
-                                box-sizing: border-box;
-                            }
+                            white-space: nowrap;
                         }
                         .prix{
                             margin-left: auto;
@@ -573,16 +603,15 @@ body{
                                 position: absolute;
                                 animation: ellipsis 0.1ms both;
                                 -webkit-animation: ellipsis 0.1ms both;
-                                @if (margin-right:93%){
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                    white-space: nowrap;
-                                    box-sizing: border-box;
-                                }
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                box-sizing: border-box;
+                                width: 100px;
                             }
                             .prix{
                                 position: relative;
-                                margin-lef:40%;
+                                margin-left:85%;
                                 animation: slide 0.1ms both;
                                 -webkit-transition: slide 0.1ms both;
                                 -moz-transition: slide 0.1ms both;
@@ -596,13 +625,14 @@ body{
                             background-color: $Tertiaire;
                             color: white;
                             font-weight: bold;
-                            padding:24px;
-                            line-height: 56px;
-                            border-top-right-radius: 2vh;
-                            border-bottom-right-radius: 2vh;
-                            margin-top: -103px;
-                            animation:fade-2 0.1ms both;
-                            -webkit-animation:fade-2 0.1ms both;
+                            padding:19px;
+                            line-height: 60px;
+                            border-top-right-radius: 24px;
+                            border-bottom-right-radius: 24px;
+                            margin-top: -97px;
+                            margin-right: -6px;
+                            animation:fade-2 0.2s both;
+                            -webkit-animation:fade-2 0.2s both;
                         }
                     }
                 }
@@ -657,7 +687,7 @@ body{
                 }
                 100% {
                     opacity: 1;
-                    font-size: 41px;
+                    font-size: 40px;
                     transform: none;
                     -webkit-transform: none;
                     -moz-transform: none;
