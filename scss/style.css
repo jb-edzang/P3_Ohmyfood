@@ -46,15 +46,15 @@ body .loader-spinner {
   border-radius: 100%;
   border: 6px solid #99e2d0;
   position: relative;
-  height: 350px;
-  width: 350px;
+  height: 15rem;
+  width: 15rem;
   overflow: hidden;
-  margin-left: 18%;
+  margin-left: 10%;
 }
 
 @media screen and (min-width: 1200px) {
   body .loader-spinner {
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 
@@ -153,7 +153,7 @@ body .container .reservation .search {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e0e0e0;
-  height: 58px;
+  height: 34px;
   margin-top: 8px;
   margin-bottom: 50px;
   padding: 10px;
@@ -191,14 +191,15 @@ body .container .reservation .title_reservation {
 }
 
 body .container .reservation .title_reservation h1 {
-  font-size: 25px;
+  font-size: 27px;
+  font-weight: 800;
 }
 
 body .container .reservation .title_reservation h3, body .container .reservation .title_reservation section .cards h4, body .container section .cards .reservation .title_reservation h4 {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: normal;
   color: #888;
-  height: 60px;
+  height: 65px;
 }
 
 body .container .reservation .btn, body .container .reservation .btn_reservation {
@@ -206,13 +207,13 @@ body .container .reservation .btn, body .container .reservation .btn_reservation
   background: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
   background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
   border-radius: 30px;
-  width: 200px;
-  padding: 20px;
+  width: 210px;
+  padding: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -310,6 +311,12 @@ body .container section {
           box-sizing: border-box;
 }
 
+body .container section h2 {
+  padding: 30px 0 0 0;
+  font-size: 35px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 1200px) {
   body .container section .cards {
     display: -ms-grid;
@@ -322,10 +329,6 @@ body .container section {
     -o-object-fit: cover;
        object-fit: cover;
   }
-}
-
-body .container section .cards .h2 {
-  padding: 30px 0 0 10px;
 }
 
 body .container section .cards a {
@@ -343,15 +346,15 @@ body .container section .cards .card {
 
 body .container section .cards h3, body .container section .cards h4 {
   padding-left: 10px;
-  font-family: Shrikhand;
+  font-size: 24px;
   color: black;
 }
 
 body .container section .cards h4 {
   font-size: 19px;
   margin-top: -15px;
-  font-family: roboto;
   font-size: 22px;
+  font-weight: 400;
 }
 
 body .container section .cards .img, body .container section .cards .img_section {
@@ -362,8 +365,8 @@ body .container section .cards .img, body .container section .cards .img_section
 }
 
 body .container section .cards .img_section {
-  border-top-left-radius: 4vw;
-  border-top-right-radius: 4vw;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 @media screen and (min-width: 1200px) {
