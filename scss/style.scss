@@ -449,16 +449,15 @@ body{
 
                 .bg_legende{
                     width: 110%;
-                    height: 100%;
+                    height: 4em;
                     margin-top:-3em;
                     .legende {
                         display: flex;
                         width: 93%;
-                        height: 3em;
+                        height: 100%;
                         align-items: center;
                         font-size: 36px;
                         font-style: italic;
-                        height: 82px;
                         box-sizing: border-box;
                         i.fas.fa-heart{
                             width: 18%;
