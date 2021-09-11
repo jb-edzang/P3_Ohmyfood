@@ -130,7 +130,7 @@ body{
             padding:20px;
             margin: -16px 0;
             .logo{
-                height: 3rem;
+                height: 2rem;
                 background-color:white;
                 display: inherit;
                 margin:auto;
@@ -416,8 +416,8 @@ body{
                 i.fas.fa-arrow-left{
                     display: flex;
                     margin-right: auto;
-                    font-weight: 900;
-                    font-size: xx-large;
+                    // font-weight: 900;
+                    font-size: x-large;
                     color:black;
                 }
             }
@@ -450,7 +450,7 @@ body{
 
                 .bg_legende{
                     width: 110%;
-                    height: 10em;
+                    height: 7em;
                     .legende {
                         display: flex;
                         width: 93%;
