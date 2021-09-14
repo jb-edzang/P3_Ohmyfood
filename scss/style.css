@@ -513,7 +513,7 @@ body .container .menu_du_gout .heading, body .container .menu_enchante .heading,
 
 body .container .menu_du_gout .heading .bg_legende, body .container .menu_enchante .heading .bg_legende, body .container .menu_francais .heading .bg_legende, body .container .menu_des_sens .heading .bg_legende {
   width: 110%;
-  height: 7em;
+  line-height: 6.5em;
   margin-top: -3em;
 }
 
@@ -522,12 +522,12 @@ body .container .menu_du_gout .heading .bg_legende .legende, body .container .me
   display: -ms-flexbox;
   display: flex;
   width: 93%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 36px;
   font-style: italic;
-  height: 82px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -545,6 +545,7 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   border-top-right-radius: 4vw;
   background-color: white;
   margin-top: -11%;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1200px) {
