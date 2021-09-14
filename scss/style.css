@@ -375,7 +375,7 @@ body .container section .cards .img_section {
     border-top-right-radius: 15px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 38vh;
+    height: 24vh;
     width: 100%;
   }
 }
