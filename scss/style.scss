@@ -72,11 +72,11 @@ body{
         position: relative;
         border-radius: 100%;
         border: 6px solid $Tertiaire;
+        background-color: #f2f2f2;
         position:relative;
         height: 15rem;
         width: 15rem;
         overflow: hidden;
-        // margin-left: 1%;
         @media screen and (min-width:1200px) {
             margin-left: 30%;
         }
@@ -331,7 +331,7 @@ body{
                         border-top-left-radius: 15px;
                         border-top-right-radius: 15px;
                         object-fit: cover;
-                        height: 24vh;
+                        height: 30vh;
                         width: 100%;
                     }
                 }
@@ -453,7 +453,7 @@ body{
                     margin-top:-3em;
                     .legende {
                         display: flex;
-                        width: 93%;
+                        width: 94%;
                         height: 100%;
                         align-items: center;
                         font-size: 36px;
@@ -466,7 +466,7 @@ body{
                             padding-top: 10%;
                             cursor: pointer;
                             font-weight:lighter;
-                            font-size: 7vw;
+                            font-size: 4vh;
                             border-top-right-radius: 4vw;
                             background-color: white;
                             margin-top:-11%;
@@ -499,7 +499,7 @@ body{
                         }
 
                         h1{
-                            font-size: 7vw;
+                            font-size: 2vh;
                             font-family: shrikhand;
                             font-style: oblique;
                             justify-content: space-between;
@@ -596,6 +596,14 @@ body{
                         }
                     }
                     &:hover{
+                        h3{
+                            width: 160px;
+                            flex-wrap: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            box-sizing: border-box;
+                        }
                         .titre_prix{
                             .titre{
                                 position: absolute;
@@ -655,7 +663,7 @@ body{
                     -o-transform: translate3d(100px, 1000px, 0);
                 }
                 100%{
-                    opacity: 1;
+                    opacity: 0;
                     transform: 0;
                     -webkit-transform: 0;
                     -moz-transform: 0;
@@ -666,12 +674,15 @@ body{
 
             .entrees{
                 animation-delay:0.1ms;
+                opacity: 1;
             }
             .plats{
                 animation-delay:1s;
+                opacity: 1;
             }
             .desserts{
                 animation-delay:2s;
+                opacity: 1;
             }
 
             @keyframes fade-2 {

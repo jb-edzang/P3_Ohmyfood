@@ -45,6 +45,7 @@ body .loader-spinner {
   position: relative;
   border-radius: 100%;
   border: 6px solid #99e2d0;
+  background-color: #f2f2f2;
   position: relative;
   height: 15rem;
   width: 15rem;
@@ -375,7 +376,7 @@ body .container section .cards .img_section {
     border-top-right-radius: 15px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 24vh;
+    height: 30vh;
     width: 100%;
   }
 }
@@ -521,7 +522,7 @@ body .container .menu_du_gout .heading .bg_legende .legende, body .container .me
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 93%;
+  width: 94%;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -541,7 +542,7 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   padding-top: 10%;
   cursor: pointer;
   font-weight: lighter;
-  font-size: 7vw;
+  font-size: 4vh;
   border-top-right-radius: 4vw;
   background-color: white;
   margin-top: -11%;
@@ -588,7 +589,7 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart:hover
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende h1, body .container .menu_enchante .heading .bg_legende .legende h1, body .container .menu_francais .heading .bg_legende .legende h1, body .container .menu_des_sens .heading .bg_legende .legende h1 {
-  font-size: 7vw;
+  font-size: 2vh;
   font-family: shrikhand;
   font-style: oblique;
   -webkit-box-pack: justify;
@@ -719,6 +720,17 @@ body .container .menu_du_gout .entrees .entree .titre_prix .prix, body .containe
   margin-left: auto;
 }
 
+body .container .menu_du_gout .entrees .entree:hover h3, body .container .menu_enchante .entrees .entree:hover h3, body .container .menu_francais .entrees .entree:hover h3, body .container .menu_des_sens .entrees .entree:hover h3, body .container .menu_du_gout .entrees .entree:hover section .cards h4, body .container section .cards .menu_du_gout .entrees .entree:hover h4, body .container .menu_enchante .entrees .entree:hover section .cards h4, body .container section .cards .menu_enchante .entrees .entree:hover h4, body .container .menu_francais .entrees .entree:hover section .cards h4, body .container section .cards .menu_francais .entrees .entree:hover h4, body .container .menu_des_sens .entrees .entree:hover section .cards h4, body .container section .cards .menu_des_sens .entrees .entree:hover h4, body .container .menu_du_gout .entrees .plat:hover h3, body .container .menu_enchante .entrees .plat:hover h3, body .container .menu_francais .entrees .plat:hover h3, body .container .menu_des_sens .entrees .plat:hover h3, body .container .menu_du_gout .entrees .plat:hover section .cards h4, body .container section .cards .menu_du_gout .entrees .plat:hover h4, body .container .menu_enchante .entrees .plat:hover section .cards h4, body .container section .cards .menu_enchante .entrees .plat:hover h4, body .container .menu_francais .entrees .plat:hover section .cards h4, body .container section .cards .menu_francais .entrees .plat:hover h4, body .container .menu_des_sens .entrees .plat:hover section .cards h4, body .container section .cards .menu_des_sens .entrees .plat:hover h4, body .container .menu_du_gout .entrees .dessert:hover h3, body .container .menu_enchante .entrees .dessert:hover h3, body .container .menu_francais .entrees .dessert:hover h3, body .container .menu_des_sens .entrees .dessert:hover h3, body .container .menu_du_gout .entrees .dessert:hover section .cards h4, body .container section .cards .menu_du_gout .entrees .dessert:hover h4, body .container .menu_enchante .entrees .dessert:hover section .cards h4, body .container section .cards .menu_enchante .entrees .dessert:hover h4, body .container .menu_francais .entrees .dessert:hover section .cards h4, body .container section .cards .menu_francais .entrees .dessert:hover h4, body .container .menu_des_sens .entrees .dessert:hover section .cards h4, body .container section .cards .menu_des_sens .entrees .dessert:hover h4, body .container .menu_du_gout .plats .entree:hover h3, body .container .menu_enchante .plats .entree:hover h3, body .container .menu_francais .plats .entree:hover h3, body .container .menu_des_sens .plats .entree:hover h3, body .container .menu_du_gout .plats .entree:hover section .cards h4, body .container section .cards .menu_du_gout .plats .entree:hover h4, body .container .menu_enchante .plats .entree:hover section .cards h4, body .container section .cards .menu_enchante .plats .entree:hover h4, body .container .menu_francais .plats .entree:hover section .cards h4, body .container section .cards .menu_francais .plats .entree:hover h4, body .container .menu_des_sens .plats .entree:hover section .cards h4, body .container section .cards .menu_des_sens .plats .entree:hover h4, body .container .menu_du_gout .plats .plat:hover h3, body .container .menu_enchante .plats .plat:hover h3, body .container .menu_francais .plats .plat:hover h3, body .container .menu_des_sens .plats .plat:hover h3, body .container .menu_du_gout .plats .plat:hover section .cards h4, body .container section .cards .menu_du_gout .plats .plat:hover h4, body .container .menu_enchante .plats .plat:hover section .cards h4, body .container section .cards .menu_enchante .plats .plat:hover h4, body .container .menu_francais .plats .plat:hover section .cards h4, body .container section .cards .menu_francais .plats .plat:hover h4, body .container .menu_des_sens .plats .plat:hover section .cards h4, body .container section .cards .menu_des_sens .plats .plat:hover h4, body .container .menu_du_gout .plats .dessert:hover h3, body .container .menu_enchante .plats .dessert:hover h3, body .container .menu_francais .plats .dessert:hover h3, body .container .menu_des_sens .plats .dessert:hover h3, body .container .menu_du_gout .plats .dessert:hover section .cards h4, body .container section .cards .menu_du_gout .plats .dessert:hover h4, body .container .menu_enchante .plats .dessert:hover section .cards h4, body .container section .cards .menu_enchante .plats .dessert:hover h4, body .container .menu_francais .plats .dessert:hover section .cards h4, body .container section .cards .menu_francais .plats .dessert:hover h4, body .container .menu_des_sens .plats .dessert:hover section .cards h4, body .container section .cards .menu_des_sens .plats .dessert:hover h4, body .container .menu_du_gout .desserts .entree:hover h3, body .container .menu_enchante .desserts .entree:hover h3, body .container .menu_francais .desserts .entree:hover h3, body .container .menu_des_sens .desserts .entree:hover h3, body .container .menu_du_gout .desserts .entree:hover section .cards h4, body .container section .cards .menu_du_gout .desserts .entree:hover h4, body .container .menu_enchante .desserts .entree:hover section .cards h4, body .container section .cards .menu_enchante .desserts .entree:hover h4, body .container .menu_francais .desserts .entree:hover section .cards h4, body .container section .cards .menu_francais .desserts .entree:hover h4, body .container .menu_des_sens .desserts .entree:hover section .cards h4, body .container section .cards .menu_des_sens .desserts .entree:hover h4, body .container .menu_du_gout .desserts .plat:hover h3, body .container .menu_enchante .desserts .plat:hover h3, body .container .menu_francais .desserts .plat:hover h3, body .container .menu_des_sens .desserts .plat:hover h3, body .container .menu_du_gout .desserts .plat:hover section .cards h4, body .container section .cards .menu_du_gout .desserts .plat:hover h4, body .container .menu_enchante .desserts .plat:hover section .cards h4, body .container section .cards .menu_enchante .desserts .plat:hover h4, body .container .menu_francais .desserts .plat:hover section .cards h4, body .container section .cards .menu_francais .desserts .plat:hover h4, body .container .menu_des_sens .desserts .plat:hover section .cards h4, body .container section .cards .menu_des_sens .desserts .plat:hover h4, body .container .menu_du_gout .desserts .dessert:hover h3, body .container .menu_enchante .desserts .dessert:hover h3, body .container .menu_francais .desserts .dessert:hover h3, body .container .menu_des_sens .desserts .dessert:hover h3, body .container .menu_du_gout .desserts .dessert:hover section .cards h4, body .container section .cards .menu_du_gout .desserts .dessert:hover h4, body .container .menu_enchante .desserts .dessert:hover section .cards h4, body .container section .cards .menu_enchante .desserts .dessert:hover h4, body .container .menu_francais .desserts .dessert:hover section .cards h4, body .container section .cards .menu_francais .desserts .dessert:hover h4, body .container .menu_des_sens .desserts .dessert:hover section .cards h4, body .container section .cards .menu_des_sens .desserts .dessert:hover h4 {
+  width: 160px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body .container .menu_du_gout .entrees .entree:hover .titre_prix .titre, body .container .menu_enchante .entrees .entree:hover .titre_prix .titre, body .container .menu_francais .entrees .entree:hover .titre_prix .titre, body .container .menu_des_sens .entrees .entree:hover .titre_prix .titre, body .container .menu_du_gout .entrees .plat:hover .titre_prix .titre, body .container .menu_enchante .entrees .plat:hover .titre_prix .titre, body .container .menu_francais .entrees .plat:hover .titre_prix .titre, body .container .menu_des_sens .entrees .plat:hover .titre_prix .titre, body .container .menu_du_gout .entrees .dessert:hover .titre_prix .titre, body .container .menu_enchante .entrees .dessert:hover .titre_prix .titre, body .container .menu_francais .entrees .dessert:hover .titre_prix .titre, body .container .menu_des_sens .entrees .dessert:hover .titre_prix .titre, body .container .menu_du_gout .plats .entree:hover .titre_prix .titre, body .container .menu_enchante .plats .entree:hover .titre_prix .titre, body .container .menu_francais .plats .entree:hover .titre_prix .titre, body .container .menu_des_sens .plats .entree:hover .titre_prix .titre, body .container .menu_du_gout .plats .plat:hover .titre_prix .titre, body .container .menu_enchante .plats .plat:hover .titre_prix .titre, body .container .menu_francais .plats .plat:hover .titre_prix .titre, body .container .menu_des_sens .plats .plat:hover .titre_prix .titre, body .container .menu_du_gout .plats .dessert:hover .titre_prix .titre, body .container .menu_enchante .plats .dessert:hover .titre_prix .titre, body .container .menu_francais .plats .dessert:hover .titre_prix .titre, body .container .menu_des_sens .plats .dessert:hover .titre_prix .titre, body .container .menu_du_gout .desserts .entree:hover .titre_prix .titre, body .container .menu_enchante .desserts .entree:hover .titre_prix .titre, body .container .menu_francais .desserts .entree:hover .titre_prix .titre, body .container .menu_des_sens .desserts .entree:hover .titre_prix .titre, body .container .menu_du_gout .desserts .plat:hover .titre_prix .titre, body .container .menu_enchante .desserts .plat:hover .titre_prix .titre, body .container .menu_francais .desserts .plat:hover .titre_prix .titre, body .container .menu_des_sens .desserts .plat:hover .titre_prix .titre, body .container .menu_du_gout .desserts .dessert:hover .titre_prix .titre, body .container .menu_enchante .desserts .dessert:hover .titre_prix .titre, body .container .menu_francais .desserts .dessert:hover .titre_prix .titre, body .container .menu_des_sens .desserts .dessert:hover .titre_prix .titre {
   position: absolute;
   animation: ellipsis 0.1ms both;
@@ -782,7 +794,7 @@ body .container .menu_du_gout .entrees .check_circle i.far.fa-check-circle, body
     -o-transform: translate3d(100px, 1000px, 0);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: 0;
     -webkit-transform: 0;
     -moz-transform: 0;
@@ -801,7 +813,7 @@ body .container .menu_du_gout .entrees .check_circle i.far.fa-check-circle, body
     -o-transform: translate3d(100px, 1000px, 0);
   }
   100% {
-    opacity: 1;
+    opacity: 0;
     transform: 0;
     -webkit-transform: 0;
     -moz-transform: 0;
@@ -813,16 +825,19 @@ body .container .menu_du_gout .entrees .check_circle i.far.fa-check-circle, body
 body .container .menu_du_gout .entrees, body .container .menu_enchante .entrees, body .container .menu_francais .entrees, body .container .menu_des_sens .entrees {
   -webkit-animation-delay: 0.1ms;
           animation-delay: 0.1ms;
+  opacity: 1;
 }
 
 body .container .menu_du_gout .plats, body .container .menu_enchante .plats, body .container .menu_francais .plats, body .container .menu_des_sens .plats {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+  opacity: 1;
 }
 
 body .container .menu_du_gout .desserts, body .container .menu_enchante .desserts, body .container .menu_francais .desserts, body .container .menu_des_sens .desserts {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  opacity: 1;
 }
 
 @-webkit-keyframes fade-2 {
