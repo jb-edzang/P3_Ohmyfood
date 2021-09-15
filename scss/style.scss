@@ -451,6 +451,9 @@ body{
                     width: 110%;
                     line-height: 6.5em;
                     margin-top:-3em;
+                    @media screen and (min-width:1200px){
+                        line-height: 287%;
+                    }
                     .legende {
                         display: flex;
                         width: 94%;
@@ -463,18 +466,19 @@ body{
                             width: 18%;
                             display: inherit;
                             justify-content: center;
-                            padding-top: 10%;
+                            padding-top: 16%;
                             cursor: pointer;
                             font-weight:lighter;
-                            font-size: 4vh;
+                            // font-size: 4vh;
                             border-top-right-radius: 4vw;
                             background-color: white;
-                            margin-top:-11%;
+                            margin-top:-17%;
                             margin-right: 10px;
                             @media screen and (min-width:1200px){
                                 font-size: 1.9em;
                                 padding-top: 1em;
                                 width: 18%;
+                                margin-top:-5rem;
                             }
                             &:hover{
                                 transition: 2s ease-in-out;
@@ -491,7 +495,6 @@ body{
                                     color:$Secondaire;
                                 }
                                 100%{
-                                    // background-position: -100% -100%;
                                     font-weight: bold;
                                     color: rgb(147,86,220);
                                 }

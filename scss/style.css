@@ -518,6 +518,12 @@ body .container .menu_du_gout .heading .bg_legende, body .container .menu_enchan
   margin-top: -3em;
 }
 
+@media screen and (min-width: 1200px) {
+  body .container .menu_du_gout .heading .bg_legende, body .container .menu_enchante .heading .bg_legende, body .container .menu_francais .heading .bg_legende, body .container .menu_des_sens .heading .bg_legende {
+    line-height: 287%;
+  }
+}
+
 body .container .menu_du_gout .heading .bg_legende .legende, body .container .menu_enchante .heading .bg_legende .legende, body .container .menu_francais .heading .bg_legende .legende, body .container .menu_des_sens .heading .bg_legende .legende {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,13 +545,12 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10%;
+  padding-top: 16%;
   cursor: pointer;
   font-weight: lighter;
-  font-size: 4vh;
   border-top-right-radius: 4vw;
   background-color: white;
-  margin-top: -11%;
+  margin-top: -17%;
   margin-right: 10px;
 }
 
@@ -554,6 +559,7 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
     font-size: 1.9em;
     padding-top: 1em;
     width: 18%;
+    margin-top: -5rem;
   }
 }
 
