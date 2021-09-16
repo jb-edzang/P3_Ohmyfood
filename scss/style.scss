@@ -448,16 +448,19 @@ body{
                 background-color: white;
 
                 .bg_legende{
-                    width: 110%;
-                    line-height: 6.5em;
+                    display: inline-grid;
+                    width: 101%;
+                    line-height: 6em;
                     margin-top:-3em;
+                    background-color: white;
+                    border-top-right-radius: 30px;
+                    border-top-left-radius: 30px;
                     @media screen and (min-width:1200px){
                         line-height: 287%;
                     }
                     .legende {
                         display: flex;
-                        width: 94%;
-                        height: 100%;
+                        width: 102%;
                         align-items: center;
                         font-size: 36px;
                         font-style: italic;
@@ -466,43 +469,44 @@ body{
                             width: 18%;
                             display: inherit;
                             justify-content: center;
-                            padding-top: 16%;
                             cursor: pointer;
                             font-weight:lighter;
                             // font-size: 4vh;
                             border-top-right-radius: 4vw;
                             background-color: white;
-                            margin-top:-17%;
-                            margin-right: 10px;
                             @media screen and (min-width:1200px){
                                 font-size: 1.9em;
-                                padding-top: 1em;
                                 width: 18%;
-                                margin-top:-5rem;
                             }
                             &:hover{
-                                transition: 2s ease-in-out;
+                                // transition: 2s ease-in-out;
                                 width: 20%;
-                                animation: coeur 2s both;
-                                -webkit-animation: coeur 2s both;
-                                -webkit-transition: 2s ease-in-out;
-                                -moz-transition: 2s ease-in-out;
-                                -ms-transition: 2s ease-in-out;
-                                -o-transition: 2s ease-in-out;
+                                animation: coeur 2s linear;
+                                -webkit-animation: coeur 2s linear;
                             }
                             @keyframes coeur {
                                 0%{
-                                    color:$Secondaire;
+                                    color:linear-gradient($Primaire 25%);
+                                    transform: translateY(50px -5px);
+                                    -webkit-transform: translateY(50px -5px);
+                                    -moz-transform: translateY(50px -5px);
+                                    -ms-transform: translateY(50px -5px);
+                                    -o-transform: translateY(50px -5px);
                                 }
                                 100%{
                                     font-weight: bold;
-                                    color: rgb(147,86,220);
+                                    color: rgb(90, 27, 179);
+                                    transform: none;
+                                    -webkit-transform: none;
+                                    -moz-transform: none;
+                                    -ms-transform: none;
+                                    -o-transform: none;
                                 }
                             }
                         }
 
                         h1{
-                            font-size: 2vh;
+                            font-size: 3vh;
                             font-family: shrikhand;
                             font-style: oblique;
                             justify-content: space-between;
@@ -510,13 +514,10 @@ body{
                             font-weight: bold;
                             border-top-left-radius: 4vw;
                             background-color: white;
-                            margin-top:-5%;
-                            padding-top:7%;
                             width: 80%;
                             box-sizing: border-box;
                             @media screen and (min-width:1200px){
                                 font-size: 2em;
-                                margin-top:-2.6%;
                             }
                         }
                     }
@@ -620,7 +621,7 @@ body{
                             }
                             .prix{
                                 position: relative;
-                                margin-left:85%;
+                                margin-left:95%;
                                 animation: slide 0.1ms both;
                                 -webkit-transition: slide 0.1ms both;
                                 -moz-transition: slide 0.1ms both;

@@ -513,9 +513,14 @@ body .container .menu_du_gout .heading, body .container .menu_enchante .heading,
 }
 
 body .container .menu_du_gout .heading .bg_legende, body .container .menu_enchante .heading .bg_legende, body .container .menu_francais .heading .bg_legende, body .container .menu_des_sens .heading .bg_legende {
-  width: 110%;
-  line-height: 6.5em;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  width: 101%;
+  line-height: 6em;
   margin-top: -3em;
+  background-color: white;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -528,8 +533,7 @@ body .container .menu_du_gout .heading .bg_legende .legende, body .container .me
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 94%;
-  height: 100%;
+  width: 102%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -545,57 +549,67 @@ body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 16%;
   cursor: pointer;
   font-weight: lighter;
   border-top-right-radius: 4vw;
   background-color: white;
-  margin-top: -17%;
-  margin-right: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart {
     font-size: 1.9em;
-    padding-top: 1em;
     width: 18%;
-    margin-top: -5rem;
   }
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_enchante .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_francais .heading .bg_legende .legende i.fas.fa-heart:hover, body .container .menu_des_sens .heading .bg_legende .legende i.fas.fa-heart:hover {
-  transition: 2s ease-in-out;
   width: 20%;
-  animation: coeur 2s both;
-  -webkit-animation: coeur 2s both;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -ms-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
+  animation: coeur 2s linear;
+  -webkit-animation: coeur 2s linear;
 }
 
 @-webkit-keyframes coeur {
   0% {
-    color: #ff79da;
+    color: linear-gradient(#9356dc 25%);
+    transform: translateY(50px -5px);
+    -webkit-transform: translateY(50px -5px);
+    -moz-transform: translateY(50px -5px);
+    -ms-transform: translateY(50px -5px);
+    -o-transform: translateY(50px -5px);
   }
   100% {
     font-weight: bold;
-    color: #9356dc;
+    color: #5a1bb3;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
 }
 
 @keyframes coeur {
   0% {
-    color: #ff79da;
+    color: linear-gradient(#9356dc 25%);
+    transform: translateY(50px -5px);
+    -webkit-transform: translateY(50px -5px);
+    -moz-transform: translateY(50px -5px);
+    -ms-transform: translateY(50px -5px);
+    -o-transform: translateY(50px -5px);
   }
   100% {
     font-weight: bold;
-    color: #9356dc;
+    color: #5a1bb3;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
   }
 }
 
 body .container .menu_du_gout .heading .bg_legende .legende h1, body .container .menu_enchante .heading .bg_legende .legende h1, body .container .menu_francais .heading .bg_legende .legende h1, body .container .menu_des_sens .heading .bg_legende .legende h1 {
-  font-size: 2vh;
+  font-size: 3vh;
   font-family: shrikhand;
   font-style: oblique;
   -webkit-box-pack: justify;
@@ -607,8 +621,6 @@ body .container .menu_du_gout .heading .bg_legende .legende h1, body .container 
   font-weight: bold;
   border-top-left-radius: 4vw;
   background-color: white;
-  margin-top: -5%;
-  padding-top: 7%;
   width: 80%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -617,7 +629,6 @@ body .container .menu_du_gout .heading .bg_legende .legende h1, body .container 
 @media screen and (min-width: 1200px) {
   body .container .menu_du_gout .heading .bg_legende .legende h1, body .container .menu_enchante .heading .bg_legende .legende h1, body .container .menu_francais .heading .bg_legende .legende h1, body .container .menu_des_sens .heading .bg_legende .legende h1 {
     font-size: 2em;
-    margin-top: -2.6%;
   }
 }
 
@@ -751,7 +762,7 @@ body .container .menu_du_gout .entrees .entree:hover .titre_prix .titre, body .c
 
 body .container .menu_du_gout .entrees .entree:hover .titre_prix .prix, body .container .menu_enchante .entrees .entree:hover .titre_prix .prix, body .container .menu_francais .entrees .entree:hover .titre_prix .prix, body .container .menu_des_sens .entrees .entree:hover .titre_prix .prix, body .container .menu_du_gout .entrees .plat:hover .titre_prix .prix, body .container .menu_enchante .entrees .plat:hover .titre_prix .prix, body .container .menu_francais .entrees .plat:hover .titre_prix .prix, body .container .menu_des_sens .entrees .plat:hover .titre_prix .prix, body .container .menu_du_gout .entrees .dessert:hover .titre_prix .prix, body .container .menu_enchante .entrees .dessert:hover .titre_prix .prix, body .container .menu_francais .entrees .dessert:hover .titre_prix .prix, body .container .menu_des_sens .entrees .dessert:hover .titre_prix .prix, body .container .menu_du_gout .plats .entree:hover .titre_prix .prix, body .container .menu_enchante .plats .entree:hover .titre_prix .prix, body .container .menu_francais .plats .entree:hover .titre_prix .prix, body .container .menu_des_sens .plats .entree:hover .titre_prix .prix, body .container .menu_du_gout .plats .plat:hover .titre_prix .prix, body .container .menu_enchante .plats .plat:hover .titre_prix .prix, body .container .menu_francais .plats .plat:hover .titre_prix .prix, body .container .menu_des_sens .plats .plat:hover .titre_prix .prix, body .container .menu_du_gout .plats .dessert:hover .titre_prix .prix, body .container .menu_enchante .plats .dessert:hover .titre_prix .prix, body .container .menu_francais .plats .dessert:hover .titre_prix .prix, body .container .menu_des_sens .plats .dessert:hover .titre_prix .prix, body .container .menu_du_gout .desserts .entree:hover .titre_prix .prix, body .container .menu_enchante .desserts .entree:hover .titre_prix .prix, body .container .menu_francais .desserts .entree:hover .titre_prix .prix, body .container .menu_des_sens .desserts .entree:hover .titre_prix .prix, body .container .menu_du_gout .desserts .plat:hover .titre_prix .prix, body .container .menu_enchante .desserts .plat:hover .titre_prix .prix, body .container .menu_francais .desserts .plat:hover .titre_prix .prix, body .container .menu_des_sens .desserts .plat:hover .titre_prix .prix, body .container .menu_du_gout .desserts .dessert:hover .titre_prix .prix, body .container .menu_enchante .desserts .dessert:hover .titre_prix .prix, body .container .menu_francais .desserts .dessert:hover .titre_prix .prix, body .container .menu_des_sens .desserts .dessert:hover .titre_prix .prix {
   position: relative;
-  margin-left: 85%;
+  margin-left: 95%;
   animation: slide 0.1ms both;
   -webkit-transition: slide 0.1ms both;
   -moz-transition: slide 0.1ms both;
